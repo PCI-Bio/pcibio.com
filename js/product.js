@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. STICKY NAV AND SCROLL EFFECT
   const navbar = document.getElementById('main-navbar');
   const navLinks = navbar ? navbar.querySelectorAll('.nav-link') : [];
-  const launchBtn = document.getElementById('btn-viewer-launch');
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
@@ -34,9 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
           link.className = "nav-link text-gray-600 text-sm font-medium transition-colors hover:text-pci-blue-hover";
         }
       });
-      if (launchBtn) {
-        launchBtn.className = "bg-pci-blue hover:bg-pci-blue-hover text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-1.5";
-      }
       if (mobileMenuBtn) {
         mobileMenuBtn.className = "text-gray-600 hover:text-pci-blue-hover focus:outline-none p-2 rounded-lg hover:bg-gray-100";
       }
@@ -59,9 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
           link.className = "nav-link text-white/85 text-sm font-medium transition-colors hover:text-white";
         }
       });
-      if (launchBtn) {
-        launchBtn.className = "bg-transparent hover:bg-white hover:text-black text-white text-xs font-semibold px-4 py-2 rounded-lg border border-white/40 transition-all duration-150 flex items-center gap-1.5";
-      }
       if (mobileMenuBtn) {
         mobileMenuBtn.className = "text-white hover:text-teal-bright focus:outline-none p-2 rounded-lg hover:bg-white/10";
       }

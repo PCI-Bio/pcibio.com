@@ -25,7 +25,6 @@ export default defineConfig(() => {
           controls: resolve(__dirname, 'controls.html'),
           ai: resolve(__dirname, 'ai.html'),
           education: resolve(__dirname, 'education.html'),
-          viewer: resolve(__dirname, 'viewer.html'),
           about: resolve(__dirname, 'about.html'),
           contact: resolve(__dirname, 'contact.html'),
           account: resolve(__dirname, 'account.html'),
