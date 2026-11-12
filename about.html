@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us · Precision Cellular Immunology</title>
+  <meta name="description" content="Meet the Precision Cellular Immunology team, based at the CUBiO Innovation Hub in the Texas Medical Center, Houston.">
+  <link rel="canonical" href="https://pcibio.com/about.html">
+  <meta name="theme-color" content="#012b1a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Precision Cellular Immunology">
+  <meta property="og:title" content="About Us · Precision Cellular Immunology">
+  <meta property="og:description" content="Meet the Precision Cellular Immunology team, based at the CUBiO Innovation Hub in the Texas Medical Center, Houston.">
+  <meta property="og:url" content="https://pcibio.com/about.html">
+  <meta property="og:image" content="https://pcibio.com/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-gray-600 antialiased font-sans">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- HEADER NAVIGATION -->
+  <header id="main-navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-black/15 backdrop-blur-md border-b border-white/10 h-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 focus:outline-none select-none group" id="nav-logo">
+          <img src="logo.svg" alt="Precision Cellular Immunology Logo" class="h-11 w-auto object-contain shrink-0 transition-all duration-300 group-hover:scale-105" />
+          <span id="nav-logo-text" aria-label="PCI" class="select-none font-bold leading-none text-[38px] md:text-[44px] tracking-tight text-white transition-all duration-300 group-hover:scale-105" style="font-family:'Zilla Slab',serif;">PCI</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="nav-link text-white/85 text-sm font-medium transition-colors hover:text-white" id="link-home">Home</a>
+          <a href="products.html" class="nav-link text-white/85 text-sm font-medium transition-colors hover:text-white" id="link-products">Products</a>
+          <a href="controls.html" class="nav-link text-white/85 text-sm font-medium transition-colors hover:text-white" id="link-controls">IHC Controls</a>
+          <a href="ai.html" class="nav-link text-white/85 text-sm font-medium transition-colors hover:text-white" id="link-ai">AI & Viewer</a>
+          <a href="education.html" class="nav-link text-white/85 text-sm font-medium transition-colors hover:text-white" id="link-education">Education</a>
+          <a href="about.html" class="nav-link active text-white text-sm font-semibold transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-white" id="link-about">About</a>
+          <a href="contact.html" class="nav-link text-white/85 text-sm font-medium transition-colors hover:text-white" id="link-contact">Contact</a>
+          <a href="viewer.html" class="bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold px-4 py-2 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-1.5" id="btn-viewer-launch">
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+            Slide Viewer
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="text-white hover:text-pci-blue-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-400 p-2 rounded-lg hover:bg-white/10">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-Down Menu Overlay -->
+    <div id="mobile-menu" class="hidden fixed left-0 right-0 top-20 bg-white z-40 flex flex-col px-6 py-4 space-y-1 overflow-y-auto animate-fade-in border-t border-gray-100 shadow-xl max-h-[calc(100vh-5rem)]">
+      <a href="index.html" class="text-gray-700 text-sm font-semibold border-b border-gray-100 py-2.5 hover:text-pci-blue">Home</a>
+      <a href="products.html" class="text-gray-700 text-sm font-semibold border-b border-gray-100 py-2.5 hover:text-pci-blue">Products</a>
+      <a href="controls.html" class="text-gray-700 text-sm font-semibold border-b border-gray-100 py-2.5 hover:text-pci-blue">IHC Controls</a>
+      <a href="ai.html" class="text-gray-700 text-sm font-semibold border-b border-gray-100 py-2.5 hover:text-pci-blue">AI & Viewer</a>
+      <a href="education.html" class="text-gray-700 text-sm font-semibold border-b border-gray-100 py-2.5 hover:text-pci-blue">Education</a>
+      <a href="about.html" class="text-pci-blue text-sm font-bold border-b border-gray-100 py-2.5">About</a>
+      <a href="contact.html" class="text-gray-700 text-sm font-semibold border-b border-gray-100 py-2.5 hover:text-pci-blue">Contact</a>
+      <a href="viewer.html" class="bg-pci-blue text-white text-center py-2.5 mt-2 rounded-lg font-bold text-sm" id="btn-mobile-viewer-launch">Open Slide Viewer</a>
+    </div>
+  </header>
+
+  <!-- ABOUT HERO -->
+  <span id="main" tabindex="-1"></span>
+  <section class="bg-navy pt-32 pb-20 relative overflow-hidden" id="about-hero">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(37,99,235,0.06),transparent_50%)]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl space-y-4">
+        <span class="badge-pci badge-blue">Our Identity</span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white tracking-tight leading-tight">
+          About Precision Cellular Immunology
+        </h1>
+        <p class="text-gray-300 text-base sm:text-lg lg:text-xl font-light">
+          We are a MedTech startup redefining quality calibration standards for pathology labs, research, and education.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: MISSION STATEMENT -->
+  <section class="py-24 bg-white" id="mission-statement">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center space-y-6 reveal">
+        <span class="text-xs text-pci-blue font-bold uppercase tracking-widest font-mono">Our Mission</span>
+        <blockquote class="text-xl sm:text-2xl font-serif font-semibold text-gray-950 leading-relaxed italic">
+          "To improve patient care by ensuring that diagnostic oncology markers are scored consistently, reducing staining and interpretation errors through sequence-characterized cellular reference platforms."
+        </blockquote>
+        <p class="text-sm text-gray-500 max-w-xl mx-auto font-light leading-relaxed">
+          Through unified hardware (FFPE cellular controls) and scalable software (AI cloud-hosted WSIs deconvolution), we bridge the gap between histology runs and objective therapeutic decisions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: OUR STORY -->
+  <section class="py-24 bg-gray-50 border-y border-gray-200" id="our-story-timeline">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- visual column -->
+        <div class="lg:col-span-5 reveal">
+          <div class="bg-navy p-8 rounded-2xl border border-white/5 text-gray-300 relative overflow-hidden h-[340px] flex flex-col justify-between">
+            <div class="absolute -bottom-16 -left-16 w-44 h-44 bg-pci-blue/10 rounded-full"></div>
+            <div>
+              <div class="text-[10px] font-mono text-pci-blue font-bold tracking-widest uppercase mb-4">PCI FOUNDING HISTORY</div>
+              <h3 class="text-xl font-heading font-bold text-white leading-tight">Pioneering in the Heart of TMC</h3>
+            </div>
+            <p class="text-xs text-gray-500 leading-relaxed font-light z-10">
+              Operating right next to Houston's premier academic medical campus, we witnessed how often pathology clinics struggled to cross-validate dynamic markers. We founded PCI in 2024 to deliver a standardized ground truth.
+            </p>
+          </div>
+        </div>
+
+        <!-- content timeline column -->
+        <div class="lg:col-span-7 space-y-8 reveal" style="transition-delay: 150ms;">
+          <h2 class="text-2xl sm:text-3xl font-heading font-bold text-gray-900 tracking-tight">The Origin of Our Cell Line Approach</h2>
+          <p class="text-sm text-gray-650 leading-relaxed">
+            Prior to PCI, labs were forced to harvest residual tissue fragments from patient resections. Since tumor resections degrade quickly and are genetically inconsistent, primary stain runs frequently drifted without detection.
+          </p>
+          <p class="text-sm text-gray-650 leading-relaxed">
+            We spent two years sequencing, cloning, and characterizing uniform cellular plugs containing precise HER2, p53, and Mismatch Repair gene expression patterns. This gave clinical labs an indestructible standard of consistency.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: TEAM SECTION -->
+  <section class="py-24 bg-white" id="pathology-team-biographies">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="badge-pci badge-green font-semibold" style="font-size:1.875rem; padding:0.4rem 1.4rem; letter-spacing:0.04em;">Leadership team</span>
+      </div>
+
+      <!-- Core Leadership Grid -->
+      <div class="grid grid-cols-1 gap-6 max-w-5xl mx-auto">
+        <!-- John Andersen Profile Card -->
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden hover-lift reveal min-h-[280px]">
+          <div class="p-6 flex items-start gap-6">
+            <img src="team/john-andersen.webp" alt="John D. Andersen" class="w-32 h-32 aspect-square object-cover object-top rounded-2xl border border-black shrink-0" loading="lazy" decoding="async">
+            <div class="min-w-0 flex-1">
+              <h3 class="font-heading font-bold text-gray-900 leading-tight">John D. Andersen, DO, MBA</h3>
+              <p class="text-[11px] text-pci-blue tracking-wide uppercase font-mono font-semibold mt-0.5">Founder / CEO</p>
+              <a href="mailto:jandersen@pcibio.com" class="inline-block text-[12px] font-mono text-gray-700 hover:text-pci-blue transition-colors mt-0.5">jandersen@pcibio.com</a>
+              <p class="text-xs text-gray-500 mt-3 leading-normal font-light">
+                Dr. Andersen is a board-certified practicing pathologist with over 15+ years of experience. He served in the US Army for 8+ years, with residency training in Pathology at the internationally renowned Walter Reed Military Medical Center. He obtained the rank of Major serving as a pathologist (61U) at Fort Bragg, NC, Seoul, Korea and Camp Humphreys, Korea. He has a proven molecular and cellular biology background in biomarker discovery and characterization with multiple publications involving genetics, genomics and proteomics.
+              </p>
+              <div class="mt-3">
+                <button onclick="toggleBio('bio-andersen')" class="text-xs font-semibold text-pci-blue hover:text-pci-blue-light inline-flex items-center gap-1 cursor-pointer focus:outline-none">
+                  <span id="txt-andersen">Read complete advisory bio</span> <span class="text-[10px]">▼</span>
+                </button>
+                <div id="bio-andersen" class="hidden mt-3 text-[11px] text-gray-500 font-light leading-relaxed border-t border-gray-200/60 pt-3 animate-fade-in">
+                  Dr. Andersen completed advanced training in Gynecologic Pathology at Johns Hopkins Hospital. He served as Chief of Gynecologic Pathology at Maimonides Medical Center in Brooklyn, NY and as Gynecologic Pathology lead at Bellevue Hospital, Manhattan under NYU Langone Health. In addition to his medical training, Dr. Andersen obtained an MBA at Johns Hopkins University - Carey Business School with concentrations in Healthcare Management, Entrepreneurship and Innovation, and Public Leadership. He desires to provide the best quality pathology cell line and molecular biology physical tools that can be supplemented with artificial intelligence services.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Andrew Pace Profile Card -->
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden hover-lift reveal min-h-[280px]" style="transition-delay: 100ms;">
+          <div class="p-6 flex items-start gap-6">
+            <img src="team/andrew-pace.webp" alt="Andrew Pace" class="w-32 h-32 aspect-square object-cover object-top rounded-2xl border border-black shrink-0" loading="lazy" decoding="async">
+            <div class="min-w-0 flex-1">
+              <h3 class="font-heading font-bold text-gray-900 leading-tight">Andrew Pace, MBA</h3>
+              <p class="text-[11px] text-pci-blue tracking-wide uppercase font-mono font-semibold mt-0.5">Strategic Tech Advisor</p>
+              <a href="mailto:apace@pcibio.com" class="inline-block text-[12px] font-mono text-gray-700 hover:text-pci-blue transition-colors mt-0.5">apace@pcibio.com</a>
+              <p class="text-xs text-gray-500 mt-3 leading-normal font-light">
+                Accomplished technology and analytics leader with over a decade of experience driving digital transformation in data-intensive environments. Proven expertise in developing and executing innovative data analytics frameworks that accelerate workflows and enhance operational efficiencies. Adept at building and leading cross-functional teams to deliver breakthrough solutions in business intelligence and data analytics.
+              </p>
+              <div class="mt-3">
+                <button onclick="toggleBio('bio-pace')" class="text-xs font-semibold text-pci-blue hover:text-pci-blue-light inline-flex items-center gap-1 cursor-pointer focus:outline-none">
+                  <span id="txt-pace">Read complete technical bio</span> <span class="text-[10px]">▼</span>
+                </button>
+                <div id="bio-pace" class="hidden mt-3 text-[11px] text-gray-500 font-light leading-relaxed border-t border-gray-200/60 pt-3 animate-fade-in">
+                  Expert in integrating advanced analytical systems including cloud-based platforms (Snowflake, GCP), machine learning pipelines, and HIPAA-compliant data architectures, and securing sensitive data. Recognized for cultivating strategic partnerships with Fortune 500 clients and fostering cultures of innovation while maintaining strict regulatory compliance.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jorgo Qirjaj Profile Card -->
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden hover-lift reveal min-h-[280px]" style="transition-delay: 150ms;">
+          <div class="p-6 flex items-start gap-6">
+            <img src="team/jorgo-qirjaj.webp" alt="Jorgo Qirjaj" class="w-32 h-32 aspect-square object-cover object-top rounded-2xl border border-black shrink-0" loading="lazy" decoding="async">
+            <div class="min-w-0 flex-1">
+              <h3 class="font-heading font-bold text-gray-900 leading-tight">Jorgo Qirjaj</h3>
+              <p class="text-[11px] text-pci-blue tracking-wide uppercase font-mono font-semibold mt-0.5">AI Product Engineer</p>
+              <a href="mailto:jqirjaj@pcibio.com" class="inline-block text-[12px] font-mono text-gray-700 hover:text-pci-blue transition-colors mt-0.5">jqirjaj@pcibio.com</a>
+              <p class="text-xs text-gray-500 mt-3 leading-normal font-light">
+                Leads the end-to-end product engineering lifecycle and drives the optimization of the PCI AI model. Coordinates cross-functional workflows and keeps engineering, histopathology, and product tracks aligned on delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HISTOPATHOLOGY GROUP -->
+      <div class="mt-24 border-t border-gray-200 pt-16 reveal">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="badge-pci badge-green font-semibold" style="font-size:1.875rem; padding:0.4rem 1.4rem; letter-spacing:0.04em;">Histopathology</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 max-w-5xl mx-auto">
+          <!-- Andres Ronquillo-Erazo Profile Card -->
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden hover-lift reveal min-h-[280px]">
+            <div class="p-6 flex items-start gap-6">
+              <img src="team/andres-ronquillo-erazo.webp" alt="Andres Ronquillo-Erazo" class="w-32 h-32 aspect-square object-cover object-top rounded-2xl border border-black shrink-0" loading="lazy" decoding="async">
+              <div class="min-w-0 flex-1">
+                <h3 class="font-heading font-bold text-gray-900 leading-tight">Andres Ronquillo-Erazo</h3>
+                <p class="text-[11px] text-pci-blue tracking-wide uppercase font-mono font-semibold mt-0.5">Lead Histotechnologist</p>
+                <a href="mailto:aronquillo@pcibio.com" class="inline-block text-[12px] font-mono text-gray-700 hover:text-pci-blue transition-colors mt-0.5">aronquillo@pcibio.com</a>
+                <p class="text-xs text-gray-500 mt-3 leading-normal font-light">
+                  Executes the wet-lab foundation of every PCI cellular control &mdash; from FFPE embedding and microtome sectioning through immunohistochemistry staining runs. Ensures each block and slide meets the reproducibility and antigen-density specifications that make our controls trusted by diagnostic laboratories.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COHORT TEAM GROUP -->
+      <div class="mt-24 border-t border-gray-200 pt-16 reveal">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="badge-pci badge-green font-semibold" style="font-size:1.875rem; padding:0.4rem 1.4rem; letter-spacing:0.04em;">Cohort team</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 max-w-5xl mx-auto">
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden hover-lift reveal min-h-[280px]">
+            <div class="p-6 flex items-start gap-6">
+              <img src="team/ayan-mahmood.webp" alt="Mohammed Ayan Mahmood" class="w-32 h-32 aspect-square object-cover object-top rounded-2xl border border-black shrink-0" loading="lazy" decoding="async">
+              <div class="min-w-0 flex-1">
+                <h3 class="font-heading font-bold text-gray-900 leading-tight">Mohammed Ayan Mahmood</h3>
+                <p class="text-[11px] text-pci-blue tracking-wide uppercase font-mono font-semibold mt-0.5">Technical Marketing Intern</p>
+                <a href="mailto:amahmood@pcibio.com" class="inline-block text-[12px] font-mono text-gray-700 hover:text-pci-blue transition-colors mt-0.5">amahmood@pcibio.com</a>
+                <p class="text-xs text-gray-500 mt-3 leading-normal font-light">
+                  Contributes to engineering pipelines, viewer interfaces, and software tools, and drives technical marketing across the PCI platform. Bridges product engineering and outward-facing content so new capabilities land clearly with pathologists and lab directors.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden hover-lift reveal min-h-[280px]" style="transition-delay: 100ms;">
+            <div class="p-6 flex items-start gap-6">
+              <img src="team/audry-carruth.webp" alt="Audry Carruth" class="w-32 h-32 aspect-square object-cover object-top rounded-2xl border border-black shrink-0" loading="lazy" decoding="async">
+              <div class="min-w-0 flex-1">
+                <h3 class="font-heading font-bold text-gray-900 leading-tight">Audry Carruth</h3>
+                <p class="text-[11px] text-pci-blue tracking-wide uppercase font-mono font-semibold mt-0.5">Former MedTech Intern</p>
+                <a href="mailto:acarruth@pcibio.com" class="inline-block text-[12px] font-mono text-gray-700 hover:text-pci-blue transition-colors mt-0.5">acarruth@pcibio.com</a>
+                <p class="text-xs text-gray-500 mt-3 leading-normal font-light">
+                  Led medical research and evidence-gathering behind the PCI Education page, curating primary literature on IHC biomarkers, cell-line controls, and diagnostic scoring standards into materials pathology trainees and lab directors can actually use. Contributed to the calibration and validation workflow feeding the p53AI pipeline, and collaborated on iterative optimization of the internal AI tooling used during model development. Set the groundwork for how future cohort members onboard onto the education and research side of PCI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Biography Toggle Logic -->
+  <script>
+    function toggleBio(id) {
+      const el = document.getElementById(id);
+      const isHidden = el.classList.contains('hidden');
+      const btnTxtMap = {
+        'bio-andersen': 'txt-andersen',
+        'bio-pace': 'txt-pace'
+      };
+      const labelShortMap = {
+        'bio-andersen': 'advisory bio',
+        'bio-pace': 'technical bio'
+      };
+      
+      if (isHidden) {
+        el.classList.remove('hidden');
+        document.getElementById(btnTxtMap[id]).innerHTML = 'Collapse ' + labelShortMap[id];
+      } else {
+        el.classList.add('hidden');
+        document.getElementById(btnTxtMap[id]).innerHTML = 'Read complete ' + labelShortMap[id];
+      }
+    }
+  </script>
+
+  <!-- SECTION 5: WHY CUBIO -->
+  <section class="py-24 bg-gray-50 border-y border-gray-200" id="cubio-narrative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 reveal">
+          <span class="badge-pci badge-blue">Houston Headquarters</span>
+          <h2 class="text-3xl font-heading font-bold text-gray-900 tracking-tight">Located at the CUBiO Innovation Hub</h2>
+          <p class="text-sm text-gray-650 leading-relaxed font-light">
+            Our development laboratories operate inside the CUBiO Innovation Hub at 7505 Fannin Street, Suite 640b, part of the Texas Medical Center (TMC) ecosystem in Houston, Texas 77054.
+          </p>
+          <p class="text-sm text-gray-650 leading-relaxed font-light">
+            TMC is the single largest clinical oncology ecosystem on earth. Operating within this environment gives our pathology team real-time visibility into the dynamic validation challenges facing major cancer research institutions.
+          </p>
+        </div>
+
+        <!-- Map placeholder representation -->
+        <div class="bg-navy rounded-2xl border border-white/5 relative h-[300px] overflow-hidden reveal flex items-center justify-center text-center p-8 z-10" style="transition-delay: 150ms;">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(37,99,235,0.08),transparent_50%)]"></div>
+          <div class="space-y-3 z-15">
+            <div class="text-[10px] font-mono text-pci-blue-light font-bold uppercase tracking-widest">PCI Clinical Labs Location</div>
+            <p class="text-sm text-white font-heading font-semibold">CUBIO INNOVATION HUB, HOUSTON, TX</p>
+            <p class="text-xs text-gray-500 font-light max-w-sm mx-auto leading-relaxed">
+              7505 Fannin St, Suite 640b <br>
+              Direct logistics shipping access worldwide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: PATENT & IP SECTION -->
+  <section class="py-24 bg-white" id="ip-protection">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 reveal">
+      <span class="badge-pci badge-green">Intellectual Property</span>
+      <h2 class="text-3xl font-heading font-bold text-gray-900">Sequence-Characterized Patents Pending</h2>
+      <p class="text-gray-600 text-sm leading-relaxed max-w-2xl mx-auto font-light">
+        PCI's unique modular cellular composition algorithm, clonal sequence integration methods, and micro-pellet block cutting workflows are registered under active worldwide patent-pending portfolios (PCT filings). We are dedicated to providing reproducible physical reference standards for pathology laboratories globally.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 7: HOUSTON BIOTECH COMMUNITY MARQUEE -->
+  <section class="py-20 bg-gray-50 border-t border-gray-200 reveal" id="affiliations-bar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-gray-900 text-center mb-3">PCI is a member of the Houston Biotech community</h2>
+      <p class="text-xs text-center text-gray-500 font-mono uppercase tracking-wider mb-10">Building alongside the Texas Medical Center ecosystem</p>
+      <div class="mq" aria-label="Houston biotech affiliations">
+        <div class="mq-track">
+          <a href="https://www.biohouston.org/" target="_blank" rel="noopener" class="mq-item" aria-label="BioHouston">
+            <img src="logos/biohouston.webp" alt="BioHouston" class="mq-logo" loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.tmc.edu/" target="_blank" rel="noopener" class="mq-item" aria-label="Texas Medical Center">
+            <img src="logos/tmc.png" alt="Texas Medical Center" class="mq-logo mq-logo-tmc" loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.portalinnovations.com/" target="_blank" rel="noopener" class="mq-item" aria-label="Portal Innovations">
+            <img src="logos/portal.png" alt="Portal Innovations" class="mq-logo" loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.biohouston.org/" target="_blank" rel="noopener" class="mq-item" aria-label="BioHouston">
+            <img src="logos/biohouston.webp" alt="BioHouston" class="mq-logo" loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.tmc.edu/" target="_blank" rel="noopener" class="mq-item" aria-label="Texas Medical Center">
+            <img src="logos/tmc.png" alt="Texas Medical Center" class="mq-logo mq-logo-tmc" loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.portalinnovations.com/" target="_blank" rel="noopener" class="mq-item" aria-label="Portal Innovations">
+            <img src="logos/portal.png" alt="Portal Innovations" class="mq-logo" loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.biohouston.org/" target="_blank" rel="noopener" class="mq-item" aria-label="BioHouston">
+            <img src="logos/biohouston.webp" alt="BioHouston" class="mq-logo" loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.tmc.edu/" target="_blank" rel="noopener" class="mq-item" aria-label="Texas Medical Center">
+            <img src="logos/tmc.png" alt="Texas Medical Center" class="mq-logo mq-logo-tmc" loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.portalinnovations.com/" target="_blank" rel="noopener" class="mq-item" aria-label="Portal Innovations">
+            <img src="logos/portal.png" alt="Portal Innovations" class="mq-logo" loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.biohouston.org/" target="_blank" rel="noopener" class="mq-item" aria-label="BioHouston">
+            <img src="logos/biohouston.webp" alt="BioHouston" class="mq-logo" loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.tmc.edu/" target="_blank" rel="noopener" class="mq-item" aria-label="Texas Medical Center">
+            <img src="logos/tmc.png" alt="Texas Medical Center" class="mq-logo mq-logo-tmc" loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.portalinnovations.com/" target="_blank" rel="noopener" class="mq-item" aria-label="Portal Innovations">
+            <img src="logos/portal.png" alt="Portal Innovations" class="mq-logo" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: CTA to work with us -->
+  <section class="py-20 bg-navy text-center relative overflow-hidden" id="about-cta-footer">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_75%_75%,rgba(37,99,235,0.08),transparent_50%)]"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 relative z-10 reveal">
+      <h3 class="text-2xl font-heading font-bold text-white">Join Our Pathology Network</h3>
+      <p class="text-gray-300 text-sm max-w-lg mx-auto font-light leading-relaxed">
+        Let's team up. Reach out regarding custom assay development, collaborative licensing, or regional delivery.
+      </p>
+      <div class="pt-4">
+        <a href="contact.html" class="bg-pci-blue hover:bg-pci-blue-light hover-lift text-white font-semibold px-8 py-3.5 rounded-lg shadow-md transition-all inline-flex items-center gap-2">
+          Talk to Our Team
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy border-t border-white/5 text-gray-500 py-16 relative z-10" id="main-global-footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+        
+        <!-- Col 1: Brand details -->
+        <div class="md:col-span-5 space-y-4">
+          <a href="index.html" class="flex items-center gap-2 focus:outline-none select-none group" id="footer-logo">
+            <img src="logo.svg" alt="Precision Cellular Immunology Logo" class="h-11 w-auto object-contain shrink-0 transition-all duration-300 group-hover:scale-105" />
+            <span aria-label="PCI" class="select-none font-bold leading-none text-[38px] md:text-[44px] tracking-tight text-white transition-all duration-300 group-hover:scale-105" style="font-family:'Zilla Slab',serif;">PCI</span>
+          </a>
+          <p class="text-sm font-light leading-relaxed max-w-sm">
+            "Precision IHC Controls. AI-Powered Assessment." <br>
+            Standardizing histology stains through reproducible cell line plugs.
+          </p>
+          <div class="text-sm space-y-2 font-mono text-gray-500 pt-2">
+            <div><svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 mr-1 align-middle" fill="currentColor" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>CUBiO Innovation Hub, Houston, TX 77054</div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 mr-1 align-middle" fill="currentColor" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg><a href="mailto:support@pcibio.com" class="hover:text-pci-blue-light transition-colors">support@pcibio.com</a></div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 mr-1 align-middle" fill="currentColor" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg><a href="https://www.linkedin.com/company/precision-cellular-immunology" target="_blank" rel="noopener" class="hover:text-pci-blue-light transition-colors">precision-cellular-immunology</a></div>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="text-white font-heading font-semibold text-xs tracking-widest uppercase">Quick Links</h4>
+          <nav class="flex flex-col space-y-2.5 text-sm">
+            <a href="index.html" class="hover:text-pci-blue-light transition-colors">Home</a>
+            <a href="products.html" class="hover:text-pci-blue-light transition-colors">Product Catalog</a>
+            <a href="controls.html" class="hover:text-pci-blue-light transition-colors">IHC QC Controls</a>
+            <a href="ai.html" class="hover:text-pci-blue-light transition-colors">AI & Viewer</a>
+            <a href="education.html" class="hover:text-pci-blue-light transition-colors">Digital Pathology Education</a>
+            <a href="about.html" class="hover:text-pci-blue-light transition-colors">About PCI & Team</a>
+            <a href="contact.html" class="hover:text-pci-blue-light transition-colors">Contact US</a>
+          </nav>
+        </div>
+
+        <!-- Col 3: Product Platform callout -->
+        <div class="md:col-span-4 space-y-4">
+          <h4 class="text-white font-heading font-semibold text-xs tracking-widest uppercase">Our Platform</h4>
+          <p class="text-sm font-light leading-relaxed">
+            New: Digital Slide Viewer is launching soon for external beta cohorts at <strong class="text-gray-200">pcibio.ai</strong>.
+          </p>
+          <div class="pt-2">
+            <a href="viewer.html" class="inline-flex items-center gap-1.5 bg-pci-blue hover:bg-pci-blue-light text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition-all" id="btn-footer-launch">
+              <span>Open Slide Viewer</span>
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-[11px] text-gray-500 mt-6 text-center sm:text-left">For Research Use Only. Not for use in diagnostic procedures.</p>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-white/5 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 font-mono">
+        <div>&#169; 2026 Precision Cellular Immunology, LLC. All rights reserved.</div>
+        <div class="flex gap-4 mt-4 sm:mt-0">
+          <a href="/privacy.html" class="hover:text-gray-400">Privacy Policy</a>
+          <span>|</span>
+          <a href="/terms.html" class="hover:text-gray-400">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+  <!-- Vercel Web Analytics + Speed Insights (enabled in Vercel dashboard) -->
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+</body>
+</html>

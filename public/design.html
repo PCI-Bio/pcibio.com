@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PCI Logo & Branding</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link href="/fonts/fonts.css" rel="stylesheet" />
+  <style>
+    :root {
+      --forest: #012b1a;
+      --emerald: #10b981;
+      --emerald-light: #34d399;
+      --page: #f4fbf7;
+      --ink: #334155;
+      --ink-soft: #64748b;
+      --hairline: rgba(1,43,26,0.10);
+      --org-navy: #0B2E5F;
+      --org-blue: #1B4FD8;
+      --org-teal: #2ECC9A;
+      --org-salmon: #E88E6C;
+      --org-lilac: #A8C4F5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      color: var(--ink);
+      background: var(--page);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2 { font-family: "Sora", sans-serif; letter-spacing: -0.02em; margin: 0; color: var(--forest); }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+    header.mast {
+      background: linear-gradient(135deg, #010a08 0%, #043e2b 100%);
+      color: #cbd5e1;
+      padding: 52px 0 44px;
+    }
+    .mast .eyebrow { font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--emerald-light); margin-bottom: 10px; }
+    .mast h1 { color: #fff; font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+    .mast p { max-width: 62ch; color: #a7c4b5; font-size: 15px; margin: 0; }
+
+    section { padding: 48px 0; border-bottom: 1px solid var(--hairline); }
+    .sec-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 8px; }
+    .sec-num { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--emerald); }
+    .sec-head h2 { font-size: 22px; font-weight: 700; }
+    .sec-sub { color: var(--ink-soft); font-size: 14px; margin: 0 0 26px; max-width: 62ch; }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--hairline);
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: 0 1px 2px rgba(1,43,26,0.05), 0 8px 24px -18px rgba(1,43,26,0.25);
+      margin-bottom: 16px;
+    }
+
+    /* Logo pair rows — strict alignment */
+    .logo-pair { display: grid; grid-template-columns: 200px 1fr; align-items: center; gap: 26px; padding: 22px 0; border-top: 1px solid var(--hairline); }
+    .logo-pair:first-child { border-top: 0; padding-top: 6px; }
+    .logo-meta .lbl { font-family: "JetBrains Mono", monospace; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--emerald); }
+    .logo-meta h3 { font-family: "Sora", sans-serif; font-size: 17px; font-weight: 600; color: var(--forest); margin: 6px 0 4px; }
+    .logo-meta p { font-size: 13px; color: var(--ink-soft); margin: 0; }
+    .logo-showcase { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .lockup-cell {
+      display: flex; align-items: center; justify-content: center; gap: 18px;
+      padding: 24px; border-radius: 10px; min-height: 128px;
+    }
+    .lockup-cell.light { background: #fff; border: 1px solid var(--hairline); }
+    .lockup-cell.bw    { background: #000; }
+
+    /* Uniform mark box so every mark centers in the same footprint */
+    .mark-box { width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .mark-box img, .mark-box svg { width: 100%; height: 100%; object-fit: contain; }
+
+    .wm {
+      font-size: 40px; font-weight: 700; line-height: 1;
+      font-family: "IBM Plex Sans", sans-serif;
+    }
+    .wm-zilla { font-family: "Zilla Slab", serif; font-weight: 700; }
+    .lockup-cell.light .wm { color: var(--org-navy); }
+    .lockup-cell.bw    .wm { color: #fff; }
+
+    /* Business cards */
+    .biz-family { margin-top: 6px; }
+    .biz-family h3 { font-family: "Sora", sans-serif; font-size: 15px; font-weight: 600; color: var(--forest); margin: 0 0 4px; }
+    .biz-family .sub { font-family: "JetBrains Mono", monospace; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 14px; }
+    .cards-row { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .biz {
+      aspect-ratio: 1.75 / 1;
+      border-radius: 12px;
+      padding: 22px 24px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      box-shadow: 0 8px 24px -12px rgba(1,43,26,0.35);
+      position: relative; overflow: hidden;
+    }
+    .biz::after {
+      content: "";
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='42' viewBox='0 0 24 42'%3E%3Cpath d='M12 0 L24 7 L24 21 L12 28 L0 21 L0 7 Z M12 28 L12 42' fill='none' stroke='currentColor' stroke-width='0.7' stroke-opacity='0.4'/%3E%3C/svg%3E");
+      background-size: 26px 45px;
+      -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 62%);
+              mask-image: linear-gradient(to left, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 62%);
+      pointer-events: none;
+    }
+    .biz > * { position: relative; z-index: 1; }
+    .biz.mine-dark  { background: linear-gradient(135deg,#010a08 0%,#022318 45%,#043e2b 78%,#010b08 100%); color: #e2f5ea; }
+    .biz.mine-dark::after  { color: #34d399; }
+    .biz.mine-light { background: #fff; border: 1px solid var(--hairline); color: var(--forest); }
+    .biz.mine-light::after { color: #10b981; }
+    .biz.org-dark  { background: linear-gradient(135deg,#0A0F1E 0%,#0B2E5F 55%,#0F3460 100%); color: #d5e0f5; font-family: "IBM Plex Sans", sans-serif; }
+    .biz.org-dark::after  { color: #2ECC9A; }
+    .biz.org-light { background: #fff; border: 1px solid rgba(11,46,95,0.15); color: var(--org-navy); font-family: "IBM Plex Sans", sans-serif; }
+    .biz.org-light::after { color: #1B4FD8; }
+    .biz .biz-top { display: flex; align-items: center; gap: 10px; }
+    .biz .biz-top .mark-box { width: 40px; height: 40px; }
+    .biz .biz-top .wm { font-family: "Zilla Slab", serif; font-weight: 700; font-size: 30px; line-height: 1; }
+    .biz .biz-top .wm-org { font-family: "IBM Plex Sans", sans-serif; font-weight: 600; font-size: 26px; line-height: 1; letter-spacing: -0.02em; }
+    .biz.mine-dark .wm, .biz.mine-dark .name { color: #fff; }
+    .biz.mine-light .wm, .biz.mine-light .name { color: var(--forest); }
+    .biz.org-dark .wm-org, .biz.org-dark .name { color: #fff; }
+    .biz.org-light .wm-org, .biz.org-light .name { color: var(--org-navy); }
+    .biz .name { font-family: "Sora", sans-serif; font-weight: 600; font-size: 17px; }
+    .biz.org-dark .name, .biz.org-light .name { font-family: "IBM Plex Sans", sans-serif; }
+    .biz .role { font-family: "JetBrains Mono", monospace; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.75; margin-top: 2px; }
+    .biz.org-dark .role, .biz.org-light .role { font-family: "IBM Plex Mono", monospace; }
+    .biz .biz-foot { font-family: "JetBrains Mono", monospace; font-size: 11px; line-height: 1.7; }
+    .biz.org-dark .biz-foot, .biz.org-light .biz-foot { font-family: "IBM Plex Mono", monospace; }
+    .biz .biz-foot .foot-line { display: flex; align-items: center; gap: 7px; }
+    .biz .biz-foot svg { width: 11px; height: 11px; flex-shrink: 0; fill: currentColor; opacity: 0.85; }
+    .biz .accent-bar { position: absolute; left: 0; top: 0; bottom: 0; width: 6px; z-index: 2; }
+    .biz.mine-dark .accent-bar, .biz.mine-light .accent-bar { background: var(--emerald); }
+    .biz.org-dark .accent-bar { background: var(--org-teal); }
+    .biz.org-light .accent-bar { background: var(--org-blue); }
+
+    /* Palettes */
+    .palette-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .palette h3 { font-family: "Sora", sans-serif; font-size: 15px; font-weight: 600; color: var(--forest); margin: 0 0 4px; }
+    .palette .sub { font-family: "JetBrains Mono", monospace; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 14px; }
+    .swatches { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .swatch { border: 1px solid var(--hairline); border-radius: 8px; overflow: hidden; background: #fff; }
+    .swatch .chip { height: 56px; }
+    .swatch .meta { padding: 8px 10px; }
+    .swatch .name { font-size: 12px; font-weight: 600; color: var(--forest); }
+    .swatch .hex { font-family: "JetBrains Mono", monospace; font-size: 10.5px; color: var(--ink-soft); text-transform: uppercase; }
+    .swatch .role { font-size: 10.5px; color: var(--ink-soft); margin-top: 1px; }
+
+    footer { padding: 40px 0 60px; color: var(--ink-soft); font-size: 12.5px; }
+
+    @media (max-width: 760px) {
+      .logo-pair { grid-template-columns: 1fr; }
+      .cards-row, .palette-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="mast">
+    <div class="wrap">
+      <div class="eyebrow">Precision Cellular Immunology, LLC</div>
+      <h1>Logo &amp; Branding</h1>
+      <p>PCI logos available, PCI-AI logos available, business cards, and the two brand palettes side by side.</p>
+    </div>
+  </header>
+
+  <!-- PCI LOGOS AVAILABLE -->
+  <section id="pci-logos">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">01</span><h2>PCI Logos Available</h2></div>
+      <p class="sec-sub">Each mark shown colored on white (left) and white on black (right). Font: IBM Plex Sans 600 unless noted.</p>
+
+      <div class="card">
+
+        <!-- OPTION A — PATHOLOGY -->
+        <div class="logo-pair">
+          <div class="logo-meta">
+            <span class="lbl">Option A</span>
+            <h3>Pathology</h3>
+            <p>Current site mark — gradient aperture with violet nucleus and grain-textured cell wedges. Font: <b>Zilla Slab 700</b>.</p>
+          </div>
+          <div class="logo-showcase">
+            <div class="lockup-cell light">
+              <div class="mark-box"><img src="logo.svg" alt="Pathology mark" /></div>
+              <span class="wm wm-zilla">PCI</span>
+            </div>
+            <div class="lockup-cell bw">
+              <div class="mark-box"><img src="logo-bw.svg" alt="Pathology mark (B/W)" /></div>
+              <span class="wm wm-zilla">PCI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPTION B — APERTURE -->
+        <div class="logo-pair">
+          <div class="logo-meta">
+            <span class="lbl">Option B</span>
+            <h3>Aperture</h3>
+            <p>Microscope field of view. Solid navy ring with three teal control arcs on its inner circumference; navy nucleus with a teal core.</p>
+          </div>
+          <div class="logo-showcase">
+            <div class="lockup-cell light">
+              <div class="mark-box"><img src="aperture-color.svg" alt="Aperture mark" /></div>
+              <span class="wm">PCI</span>
+            </div>
+            <div class="lockup-cell bw">
+              <div class="mark-box"><img src="aperture-bw.svg" alt="Aperture mark (B/W)" /></div>
+              <span class="wm">PCI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPTION C — SLIDE (tall lab slide, per image 2) -->
+        <div class="logo-pair">
+          <div class="logo-meta">
+            <span class="lbl">Option C</span>
+            <h3>Slide</h3>
+            <p>Tall navy slide body with a frosted label at the top and a coral tissue section below, marked at center in teal. Instantly reads "pathology."</p>
+          </div>
+          <div class="logo-showcase">
+            <div class="lockup-cell light">
+              <div class="mark-box">
+                <svg viewBox="0 0 60 60">
+                  <g transform="rotate(-18 30 30)">
+                    <rect x="18" y="4" width="24" height="52" rx="4" ry="4" fill="#0B2E5F"/>
+                    <rect x="20.5" y="7" width="19" height="10" rx="1.5" ry="1.5" fill="#0B2E5F" stroke="#ffffff" stroke-width="1"/>
+                    <rect x="20.5" y="19" width="19" height="34" rx="2" ry="2" fill="#ffffff"/>
+                    <circle cx="30" cy="38" r="7" fill="#B87050"/>
+                    <circle cx="30" cy="38" r="2.5" fill="#2ECC9A"/>
+                  </g>
+                </svg>
+              </div>
+              <span class="wm">PCI</span>
+            </div>
+            <div class="lockup-cell bw">
+              <div class="mark-box">
+                <svg viewBox="0 0 60 60">
+                  <g transform="rotate(-18 30 30)">
+                    <rect x="18" y="4" width="24" height="52" rx="4" ry="4" fill="#ffffff"/>
+                    <rect x="20.5" y="7" width="19" height="10" rx="1.5" ry="1.5" fill="none" stroke="#000000" stroke-width="1"/>
+                    <rect x="20.5" y="19" width="19" height="34" rx="2" ry="2" fill="#000000"/>
+                    <circle cx="30" cy="38" r="7" fill="#ffffff"/>
+                    <circle cx="30" cy="38" r="2.5" fill="#8a8a8a"/>
+                  </g>
+                </svg>
+              </div>
+              <span class="wm">PCI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPTION D — TRICONTROL LADDER -->
+        <div class="logo-pair">
+          <div class="logo-meta">
+            <span class="lbl">Option D</span>
+            <h3>TriControl Ladder</h3>
+            <p>OE · WT · NULL as a rising calibration scale. Directly maps to the flagship product.</p>
+          </div>
+          <div class="logo-showcase">
+            <div class="lockup-cell light">
+              <div class="mark-box">
+                <svg viewBox="0 0 60 60">
+                  <rect x="8"  y="38" width="12" height="18" rx="1.5" fill="#94A3B8"/>
+                  <rect x="24" y="24" width="12" height="32" rx="1.5" fill="#1B4FD8"/>
+                  <rect x="40" y="8"  width="12" height="48" rx="1.5" fill="#2ECC9A"/>
+                </svg>
+              </div>
+              <span class="wm">PCI</span>
+            </div>
+            <div class="lockup-cell bw">
+              <div class="mark-box">
+                <svg viewBox="0 0 60 60">
+                  <rect x="8"  y="38" width="12" height="18" rx="1.5" fill="#fff" opacity="0.35"/>
+                  <rect x="24" y="24" width="12" height="32" rx="1.5" fill="#fff" opacity="0.65"/>
+                  <rect x="40" y="8"  width="12" height="48" rx="1.5" fill="#fff"/>
+                </svg>
+              </div>
+              <span class="wm">PCI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPTION E — AI DETECTION -->
+        <div class="logo-pair">
+          <div class="logo-meta">
+            <span class="lbl">Option E</span>
+            <h3>AI Detection</h3>
+            <p>Detection brackets framing a cell nucleus.</p>
+          </div>
+          <div class="logo-showcase">
+            <div class="lockup-cell light">
+              <div class="mark-box">
+                <svg viewBox="0 0 60 60">
+                  <path d="M6 18 L6 6 L18 6"   fill="none" stroke="#0B2E5F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M42 6 L54 6 L54 18" fill="none" stroke="#0B2E5F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M54 42 L54 54 L42 54" fill="none" stroke="#0B2E5F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18 54 L6 54 L6 42" fill="none" stroke="#0B2E5F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="30" cy="30" r="10" fill="none" stroke="#2ECC9A" stroke-width="2.5"/>
+                  <circle cx="30" cy="30" r="4" fill="#1B4FD8"/>
+                </svg>
+              </div>
+              <span class="wm">PCI</span>
+            </div>
+            <div class="lockup-cell bw">
+              <div class="mark-box">
+                <svg viewBox="0 0 60 60">
+                  <path d="M6 18 L6 6 L18 6"   fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M42 6 L54 6 L54 18" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M54 42 L54 54 L42 54" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18 54 L6 54 L6 42" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="30" cy="30" r="10" fill="none" stroke="#fff" stroke-width="2.5"/>
+                  <circle cx="30" cy="30" r="4" fill="#fff"/>
+                </svg>
+              </div>
+              <span class="wm">PCI</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PCI-AI LOGOS AVAILABLE -->
+  <section id="pciai-logos">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">02</span><h2>PCI-AI Logos Available</h2></div>
+      <p class="sec-sub">Reconstructed from pcibio.ai — cancer-cell mark with a "PCI-AI" wordmark. Shown colored on white and white on black.</p>
+
+      <div class="card">
+        <div class="logo-pair">
+          <div class="logo-meta">
+            <span class="lbl">From pcibio.ai</span>
+            <h3>Cancer-cell mark</h3>
+            <p>Irregular lilac cell boundary, dark navy nucleus, teal chromatin dots. Font: <b>IBM Plex Sans 700</b>.</p>
+          </div>
+          <div class="logo-showcase">
+            <div class="lockup-cell light">
+              <div class="mark-box">
+                <svg viewBox="0 0 200 200" fill="none">
+                  <path d="M 100,30 C 125,12 168,30 168,65 C 168,88 185,100 172,124 C 160,148 160,168 136,168 C 118,168 108,185 88,175 C 68,165 45,172 35,152 C 22,130 18,108 32,88 C 42,68 25,45 48,35 C 65,22 85,44 100,30 Z"
+                    fill="rgba(168,196,245,0.60)" stroke="rgba(168,196,245,0.90)" stroke-width="2.5" stroke-linejoin="round"/>
+                  <ellipse cx="100" cy="104" rx="45" ry="40" fill="rgba(11,46,95,0.60)" transform="rotate(-12, 100, 104)"/>
+                  <ellipse cx="88"  cy="95"  rx="8"   ry="5.5" fill="#2ECC9A" transform="rotate(22,88,95)"/>
+                  <circle  cx="112" cy="100" r="5.5"  fill="#2ECC9A"/>
+                  <ellipse cx="94"  cy="116" rx="5.5" ry="4"   fill="#2ECC9A" transform="rotate(-18,94,116)"/>
+                  <circle  cx="78"  cy="110" r="4.5"  fill="#2ECC9A"/>
+                  <circle  cx="110" cy="116" r="4"    fill="#2ECC9A"/>
+                  <ellipse cx="104" cy="88"  rx="5"   ry="3.5" fill="#2ECC9A" transform="rotate(12,104,88)"/>
+                  <circle  cx="82"  cy="97"  r="3.5"  fill="#2ECC9A"/>
+                  <ellipse cx="116" cy="107" rx="3.5" ry="5.5" fill="#2ECC9A" transform="rotate(38,116,107)"/>
+                  <circle  cx="91"  cy="124" r="3"    fill="#2ECC9A"/>
+                  <circle  cx="100" cy="102" r="2.5"  fill="#2ECC9A"/>
+                </svg>
+              </div>
+              <span class="wm" style="color:var(--org-navy);">PCI-AI</span>
+            </div>
+            <div class="lockup-cell bw">
+              <div class="mark-box">
+                <svg viewBox="0 0 200 200" fill="none">
+                  <path d="M 100,30 C 125,12 168,30 168,65 C 168,88 185,100 172,124 C 160,148 160,168 136,168 C 118,168 108,185 88,175 C 68,165 45,172 35,152 C 22,130 18,108 32,88 C 42,68 25,45 48,35 C 65,22 85,44 100,30 Z"
+                    fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+                  <ellipse cx="100" cy="104" rx="45" ry="40" fill="#fff" transform="rotate(-12, 100, 104)"/>
+                  <ellipse cx="88"  cy="95"  rx="8"   ry="5.5" fill="#000" transform="rotate(22,88,95)"/>
+                  <circle  cx="112" cy="100" r="5.5"  fill="#000"/>
+                  <ellipse cx="94"  cy="116" rx="5.5" ry="4"   fill="#000" transform="rotate(-18,94,116)"/>
+                  <circle  cx="78"  cy="110" r="4.5"  fill="#000"/>
+                  <circle  cx="110" cy="116" r="4"    fill="#000"/>
+                  <ellipse cx="104" cy="88"  rx="5"   ry="3.5" fill="#000" transform="rotate(12,104,88)"/>
+                  <circle  cx="82"  cy="97"  r="3.5"  fill="#000"/>
+                  <ellipse cx="116" cy="107" rx="3.5" ry="5.5" fill="#000" transform="rotate(38,116,107)"/>
+                  <circle  cx="91"  cy="124" r="3"    fill="#000"/>
+                  <circle  cx="100" cy="102" r="2.5"  fill="#000"/>
+                </svg>
+              </div>
+              <span class="wm">PCI-AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo-pair">
+          <div class="logo-meta">
+            <span class="lbl">Sunny-Electro</span>
+            <h3>Sunny-Electro</h3>
+            <p>Rounded hexagonal frame in an electric-blue gradient, a diamond sun rising through a honeycomb field, with "AI" cut into the frame. Font: <b>Quantico Bold</b>.</p>
+          </div>
+          <div class="logo-showcase">
+            <div class="lockup-cell light">
+              <div class="mark-box" style="width:120px;"><img src="pciai-sunny-electro.svg" alt="Sunny-Electro mark" /></div>
+              <span class="wm" style="font-family:'Quantico',sans-serif;font-weight:700;color:var(--org-navy);">PCI-AI</span>
+            </div>
+            <div class="lockup-cell bw">
+              <div class="mark-box" style="width:120px;"><img src="pciai-sunny-electro-bw.svg" alt="Sunny-Electro mark (B/W)" /></div>
+              <span class="wm" style="font-family:'Quantico',sans-serif;font-weight:700;">PCI-AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS CARDS -->
+  <section id="cards">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">03</span><h2>Business cards</h2></div>
+      <p class="sec-sub">3.5″ × 2″ preview. A fading hexagonal pattern anchors the right edge on both variants.</p>
+
+      <div class="biz-family">
+        <h3>Current website — Pathology mark + Zilla Slab</h3>
+        <div class="sub">Forest / Emerald palette</div>
+        <div class="cards-row">
+          <div class="biz mine-dark">
+            <span class="accent-bar"></span>
+            <div class="biz-top"><div class="mark-box"><img src="logo.svg" alt="PCI" /></div><span class="wm">PCI</span></div>
+            <div>
+              <div class="name">John D. Andersen, DO, MBA</div>
+              <div class="role">Founder / CEO</div>
+            </div>
+            <div class="biz-foot">
+              <span class="foot-line"><svg viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176L0 384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>jandersen@pcibio.com</span>
+              <span class="foot-line"><svg viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>CUBiO Innovation Hub · Houston, TX 77054</span>
+              <span class="foot-line"><svg viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>linkedin.com/in/johndandersondomba</span>
+            </div>
+          </div>
+          <div class="biz mine-light">
+            <span class="accent-bar"></span>
+            <div class="biz-top"><div class="mark-box"><img src="logo.svg" alt="PCI" /></div><span class="wm">PCI</span></div>
+            <div>
+              <div class="name">John D. Andersen, DO, MBA</div>
+              <div class="role">Founder / CEO</div>
+            </div>
+            <div class="biz-foot">
+              <span class="foot-line"><svg viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176L0 384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>jandersen@pcibio.com</span>
+              <span class="foot-line"><svg viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>CUBiO Innovation Hub · Houston, TX 77054</span>
+              <span class="foot-line"><svg viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>linkedin.com/in/johndandersondomba</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-family" style="margin-top:28px;">
+        <h3>Available — Aperture + IBM Plex Sans</h3>
+        <div class="sub">Navy / Action blue / AI teal palette</div>
+        <div class="cards-row">
+          <div class="biz org-dark">
+            <span class="accent-bar"></span>
+            <div class="biz-top">
+              <div class="mark-box"><img src="aperture-bw.svg" alt="Aperture mark" /></div>
+              <span class="wm-org">PCI</span>
+            </div>
+            <div>
+              <div class="name">John D. Andersen, DO, MBA</div>
+              <div class="role">Founder / CEO</div>
+            </div>
+            <div class="biz-foot">
+              <span class="foot-line"><svg viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176L0 384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>jandersen@pcibio.com</span>
+              <span class="foot-line"><svg viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>CUBiO Innovation Hub · Houston, TX 77054</span>
+              <span class="foot-line"><svg viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>linkedin.com/in/johndandersondomba</span>
+            </div>
+          </div>
+          <div class="biz org-light">
+            <span class="accent-bar"></span>
+            <div class="biz-top">
+              <div class="mark-box"><img src="aperture-color.svg" alt="Aperture mark" /></div>
+              <span class="wm-org">PCI</span>
+            </div>
+            <div>
+              <div class="name">John D. Andersen, DO, MBA</div>
+              <div class="role">Founder / CEO</div>
+            </div>
+            <div class="biz-foot">
+              <span class="foot-line"><svg viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176L0 384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>jandersen@pcibio.com</span>
+              <span class="foot-line"><svg viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>CUBiO Innovation Hub · Houston, TX 77054</span>
+              <span class="foot-line"><svg viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>linkedin.com/in/johndandersondomba</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PALETTES -->
+  <section id="palettes">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">04</span><h2>Brand palettes · side by side</h2></div>
+      <p class="sec-sub">Left: what the live website uses. Right: the available alternative palette.</p>
+
+      <div class="palette-grid">
+        <div class="card palette">
+          <h3>Current website</h3>
+          <div class="sub">Emerald · Forest</div>
+          <div class="swatches">
+            <div class="swatch"><div class="chip" style="background:#012b1a;"></div><div class="meta"><div class="name">Forest</div><div class="hex">#012B1A</div><div class="role">Dark sections</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#044e35;"></div><div class="meta"><div class="name">Forest light</div><div class="hex">#044E35</div><div class="role">Panels</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#10b981;"></div><div class="meta"><div class="name">Emerald</div><div class="hex">#10B981</div><div class="role">Accent</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#34d399;"></div><div class="meta"><div class="name">Emerald light</div><div class="hex">#34D399</div><div class="role">Hover, on-dark</div></div></div>
+          </div>
+        </div>
+        <div class="card palette">
+          <h3>Available</h3>
+          <div class="sub">Navy · Action blue · AI teal</div>
+          <div class="swatches">
+            <div class="swatch"><div class="chip" style="background:#0B2E5F;"></div><div class="meta"><div class="name">Navy</div><div class="hex">#0B2E5F</div><div class="role">Primary / chrome</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#1B4FD8;"></div><div class="meta"><div class="name">Action blue</div><div class="hex">#1B4FD8</div><div class="role">CTAs, links</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#2ECC9A;"></div><div class="meta"><div class="name">AI teal</div><div class="hex">#2ECC9A</div><div class="role">Algorithm / positive</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#0A0F1E;"></div><div class="meta"><div class="name">Viewer canvas</div><div class="hex">#0A0F1E</div><div class="role">Whole-slide chrome</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">Logo &amp; branding reference · PCI</div>
+  </footer>
+</body>
+</html>
