@@ -1,399 +1,5 @@
-/* Inter 300 latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(/fonts/Inter-latin-ext-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Inter 300 latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(/fonts/Inter-latin-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Inter 400 latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/Inter-latin-ext-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Inter 400 latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/Inter-latin-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Inter 500 latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/fonts/Inter-latin-ext-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Inter 500 latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/fonts/Inter-latin-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Inter 600 latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/fonts/Inter-latin-ext-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Inter 600 latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/fonts/Inter-latin-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Inter 700 latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/Inter-latin-ext-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Inter 700 latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/Inter-latin-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* JetBrains Mono 400 latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/JetBrainsMono-latin-ext-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* JetBrains Mono 400 latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/JetBrainsMono-latin-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* JetBrains Mono 500 latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/fonts/JetBrainsMono-latin-ext-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* JetBrains Mono 500 latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/fonts/JetBrainsMono-latin-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* JetBrains Mono 700 latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/JetBrainsMono-latin-ext-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* JetBrains Mono 700 latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/JetBrainsMono-latin-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Roboto Slab 700 latin-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/RobotoSlab-latin-ext-BngMUXZYTXPIvIBgJJSb6ufD5qW54A.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Roboto Slab 700 latin */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/RobotoSlab-latin-BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Roboto Slab 800 latin-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(/fonts/RobotoSlab-latin-ext-BngMUXZYTXPIvIBgJJSb6ufD5qW54A.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Roboto Slab 800 latin */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(/fonts/RobotoSlab-latin-BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Roboto Slab 900 latin-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(/fonts/RobotoSlab-latin-ext-BngMUXZYTXPIvIBgJJSb6ufD5qW54A.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Roboto Slab 900 latin */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(/fonts/RobotoSlab-latin-BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Sora 300 latin-ext */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-ext-xMQbuFFYT72XzQspDre2.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Sora 300 latin */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-xMQbuFFYT72XzQUpDg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Sora 400 latin-ext */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-ext-xMQbuFFYT72XzQspDre2.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Sora 400 latin */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-xMQbuFFYT72XzQUpDg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Sora 500 latin-ext */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-ext-xMQbuFFYT72XzQspDre2.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Sora 500 latin */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-xMQbuFFYT72XzQUpDg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Sora 600 latin-ext */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-ext-xMQbuFFYT72XzQspDre2.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Sora 600 latin */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-xMQbuFFYT72XzQUpDg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Sora 700 latin-ext */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-ext-xMQbuFFYT72XzQspDre2.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Sora 700 latin */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-xMQbuFFYT72XzQUpDg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Sora 800 latin-ext */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-ext-xMQbuFFYT72XzQspDre2.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Sora 800 latin */
-@font-face {
-  font-family: 'Sora';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(/fonts/Sora-latin-xMQbuFFYT72XzQUpDg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Zilla Slab 300 latin-ext */
-@font-face {
-  font-family: 'Zilla Slab';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(/fonts/ZillaSlab-latin-ext-dFa5ZfeM_74wlPZtksIFYpEY6H2pW2hz.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Zilla Slab 300 latin */
-@font-face {
-  font-family: 'Zilla Slab';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(/fonts/ZillaSlab-latin-dFa5ZfeM_74wlPZtksIFYpEY6HOpWw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Zilla Slab 400 latin-ext */
-@font-face {
-  font-family: 'Zilla Slab';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/ZillaSlab-latin-ext-dFa6ZfeM_74wlPZtksIFajQ6_UyI.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Zilla Slab 400 latin */
-@font-face {
-  font-family: 'Zilla Slab';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/ZillaSlab-latin-dFa6ZfeM_74wlPZtksIFajo6_Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Zilla Slab 500 latin-ext */
-@font-face {
-  font-family: 'Zilla Slab';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/fonts/ZillaSlab-latin-ext-dFa5ZfeM_74wlPZtksIFYskZ6H2pW2hz.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Zilla Slab 500 latin */
-@font-face {
-  font-family: 'Zilla Slab';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/fonts/ZillaSlab-latin-dFa5ZfeM_74wlPZtksIFYskZ6HOpWw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Zilla Slab 600 latin-ext */
-@font-face {
-  font-family: 'Zilla Slab';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/fonts/ZillaSlab-latin-ext-dFa5ZfeM_74wlPZtksIFYuUe6H2pW2hz.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Zilla Slab 600 latin */
-@font-face {
-  font-family: 'Zilla Slab';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/fonts/ZillaSlab-latin-dFa5ZfeM_74wlPZtksIFYuUe6HOpWw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Zilla Slab 700 latin-ext */
-@font-face {
-  font-family: 'Zilla Slab';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/ZillaSlab-latin-ext-dFa5ZfeM_74wlPZtksIFYoEf6H2pW2hz.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Zilla Slab 700 latin */
-@font-face {
-  font-family: 'Zilla Slab';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/ZillaSlab-latin-dFa5ZfeM_74wlPZtksIFYoEf6HOpWw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+/* pcibio.com stylesheet. Fonts: IBM Plex Sans and IBM Plex Mono, self-hosted from /fonts (SIL OFL 1.1).
+   Tokens follow pcibio.ai (navy / action blue / teal); see @theme below. */
 /* IBM Plex Mono 400 latin-ext */
 @font-face {
   font-family: 'IBM Plex Mono';
@@ -510,37 +116,49 @@
   src: url(/fonts/IBMPlexSans-latin-zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* Quantico 400 latin */
-@font-face {
-  font-family: 'Quantico';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/Quantico-latin-rax-HiSdp9cPL3KIF7xrJD0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Quantico 700 latin */
-@font-face {
-  font-family: 'Quantico';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/Quantico-latin-rax5HiSdp9cPL3KIF7TQAShdu08.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 @import "tailwindcss";
 
+/* ------------------------------------------------------------------
+   Design tokens. The palette and type follow pcibio.ai (its site.css
+   :root), so the company site and the AI platform site read as one
+   company; layout, components and motion stay this site's own.
+   Contrast rules: teal-bright (#2ecc9a) is for marks and highlighted
+   words on dark bands only, never as text on white; pci-blue is for
+   buttons and links on light backgrounds, never as text on navy.
+   ------------------------------------------------------------------ */
 @theme {
-  --color-navy: #012b1a; /* Lush deep forest/emerald green */
-  --color-navy-light: #044e35; /* Rich forest green */
-  --color-pci-blue: #10b981; /* Emerald 500 */
-  --color-pci-blue-light: #34d399; /* Emerald 400 */
-  --color-pci-green: #22c55e;
-  
-  --font-heading: "Sora", "Inter", sans-serif;
-  --font-body: "Inter", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
-  
+  --color-navy: #0b2e5f;        /* brand navy: dark bands, headings on light */
+  --color-navy-deep: #061a38;   /* the darkest bands and the footer base */
+  --color-navy-light: #143a73;  /* mid navy: panels inside dark bands */
+  --color-navy-50: #eef3fb;     /* tinted surfaces */
+  --color-navy-100: #dbe6f5;
+  --color-navy-300: #8aa6cc;
+
+  --color-pci-blue: #1b4fd8;        /* action blue: primary buttons and links on light */
+  --color-pci-blue-hover: #143fae;  /* their hover state */
+  --color-teal: #0a7d68;            /* AI accent as text on light backgrounds (AA on white) */
+  --color-teal-bright: #2ecc9a;     /* AI accent as marks, badges and highlighted words on dark */
+  --color-teal-50: #ebfbf5;
+  --color-teal-100: #c6f1e3;
+  --color-pci-green: #0a7d68;       /* legacy name used by the check marks on controls.html */
+
+  --color-ink: #1f2d3d;
+  --color-ink-2: #45566b;
+  --color-ink-3: #64748b;
+  --color-line: #dfe5ee;
+  --color-ground: #f6f8fb;
+
+  --font-heading: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Radius 10px on cards (rounded-2xl) and buttons (rounded-lg), as on pcibio.ai */
+  --radius-lg: 10px;
+  --radius-xl: 10px;
+  --radius-2xl: 10px;
+  --radius-3xl: 14px;
+
   --animate-fade-in: fade-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -556,39 +174,39 @@
   }
 }
 
-/* Base resets & styles matching high-end Editorial layouts */
+/* Base resets & styles */
 html {
   scroll-behavior: smooth;
   font-family: var(--font-body);
-  background-color: #f4fbf7; /* Beautiful soft whiter-shade of green base */
-  color: #334155;
+  background-color: #f6f8fb;
+  color: #1f2d3d;
 }
 
 /* Dark-blue accent token — used for select back-panels only */
 .deep-blue-panel {
-  background-color: #0b1e3a;
+  background-color: #061a38;
   background-image:
-    radial-gradient(circle at 20% 20%, rgba(59,130,246,0.18) 0%, transparent 55%),
-    radial-gradient(circle at 80% 90%, rgba(147,197,253,0.10) 0%, transparent 55%),
-    linear-gradient(135deg, #0b1e3a 0%, #0f2a52 100%);
+    radial-gradient(circle at 20% 20%, rgba(27,79,216,0.22) 0%, transparent 55%),
+    radial-gradient(circle at 80% 90%, rgba(46,204,154,0.10) 0%, transparent 55%),
+    linear-gradient(135deg, #061a38 0%, #0b2e5f 100%);
   color: #e2e8f0;
 }
 .deep-blue-panel .stat-num,
-.deep-blue-panel .stat-blue { color: #93c5fd !important; }
+.deep-blue-panel .stat-blue { color: #8ec5ff !important; }
 .deep-blue-panel .stat-white { color: #ffffff !important; }
 .deep-blue-panel .stat-label { color: #94a3b8 !important; }
-.deep-blue-panel .stat-accent { color: #34d399 !important; }
+.deep-blue-panel .stat-accent { color: #2ecc9a !important; }
 .deep-blue-panel .divide-slate-200 > * + * { border-color: rgba(148,163,184,0.25) !important; }
 
 body {
-  background-color: #f4fbf7;
-  color: #334155;
+  background-color: #f6f8fb;
+  color: #1f2d3d;
   overflow-x: hidden;
-  /* Beautiful premium grainy texture paired with high-end visible molecular node networks as requested */
-  background-image: 
+  /* Grain plus the hexagon network over a soft navy-tinted ground */
+  background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.06'/%3E%3C/svg%3E"),
     url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='42' viewBox='0 0 24 42'%3E%3Cpath d='M12 0 L24 7 L24 21 L12 28 L0 21 L0 7 Z M12 28 L12 42' fill='none' stroke='%23ffffff' stroke-width='0.6' stroke-opacity='0.10'/%3E%3C/svg%3E"),
-    linear-gradient(135deg, #f9fdfb 0%, #f0fbf5 35%, #dcfce7 70%, #bbf7d0 100%);
+    linear-gradient(135deg, #ffffff 0%, #f6f8fb 35%, #eef3fb 70%, #dbe6f5 100%);
   background-size: 240px 240px, 36px 63px, auto;
   background-repeat: repeat, repeat, no-repeat;
   background-attachment: fixed;
@@ -601,17 +219,17 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
-/* Dark section defaults with premium green gradient and subtle grain */
+/* Dark section defaults: deep navy gradient, subtle grain, hexagon network, a teal and a blue glow */
 .bg-navy {
   position: relative;
-  background-color: #010a08 !important;
+  background-color: #061a38 !important;
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilterDark'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilterDark)' opacity='0.05'/%3E%3C/svg%3E"),
-    radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.18) 0%, transparent 55%),
-    radial-gradient(circle at 15% 75%, rgba(236, 72, 153, 0.1) 0%, transparent 45%),
-    radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 85% 30%, rgba(46, 204, 154, 0.16) 0%, transparent 55%),
+    radial-gradient(circle at 15% 75%, rgba(27, 79, 216, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(61, 123, 255, 0.10) 0%, transparent 60%),
     url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='42' viewBox='0 0 24 42'%3E%3Cpath d='M12 0 L24 7 L24 21 L12 28 L0 21 L0 7 Z M12 28 L12 42' fill='none' stroke='%23ffffff' stroke-width='0.6' stroke-opacity='0.10'/%3E%3C/svg%3E"),
-    linear-gradient(135deg, #010a08 0%, #022318 45%, #043e2b 75%, #010b08 100%) !important;
+    linear-gradient(135deg, #061a38 0%, #0b2e5f 45%, #143a73 75%, #061a38 100%) !important;
   background-size: 240px 240px, auto, auto, auto, 36px 63px, auto;
   background-repeat: repeat, no-repeat, no-repeat, no-repeat, repeat, no-repeat;
   color: #cbd5e1;
@@ -620,26 +238,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-navy-light {
   position: relative;
-  background-color: #010e0b !important;
+  background-color: #0b2e5f !important;
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilterNavyLight'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilterNavyLight)' opacity='0.05'/%3E%3C/svg%3E"),
-    radial-gradient(circle at 75% 20%, rgba(16, 185, 129, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 25% 80%, rgba(236, 72, 153, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 75% 20%, rgba(46, 204, 154, 0.14) 0%, transparent 50%),
+    radial-gradient(circle at 25% 80%, rgba(27, 79, 216, 0.18) 0%, transparent 40%),
     url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='42' viewBox='0 0 24 42'%3E%3Cpath d='M12 0 L24 7 L24 21 L12 28 L0 21 L0 7 Z M12 28 L12 42' fill='none' stroke='%23ffffff' stroke-width='0.6' stroke-opacity='0.10'/%3E%3C/svg%3E"),
-    linear-gradient(135deg, #010e0b 0%, #033322 100%) !important;
+    linear-gradient(135deg, #0b2e5f 0%, #143a73 100%) !important;
   background-size: 240px 240px, auto, auto, 36px 63px, auto;
   background-repeat: repeat, no-repeat, no-repeat, repeat, no-repeat;
   color: #cbd5e1;
   overflow: hidden;
 }
 
-.bg-navy h1, .bg-navy h2, .bg-navy h3, .bg-navy h4, 
+.bg-navy h1, .bg-navy h2, .bg-navy h3, .bg-navy h4,
 .bg-navy-light h1, .bg-navy-light h2, .bg-navy-light h3, .bg-navy-light h4 {
   color: #ffffff !important;
 }
 
 /* Ensure logo spans and headers stand out in white across dark sections */
-.bg-navy .text-white, .bg-navy-light .text-white, 
+.bg-navy .text-white, .bg-navy-light .text-white,
 header .text-white, footer .text-white {
   color: #ffffff !important;
 }
@@ -648,8 +266,26 @@ header .text-white, footer .text-white {
   color: #ffffff !important;
 }
 
-#nav-logo .text-pci-blue-light, #footer-logo .text-pci-blue-light {
-  color: #34d399 !important;
+#nav-logo .text-teal-bright, #footer-logo .text-teal-bright {
+  color: #2ecc9a !important;
+}
+
+/* The "PCI - AI" mark next to the PCI wordmark: the AI word in the platform site's blue gradient */
+.ai-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.ai-mark img { width: 1.6em; height: 1.6em; display: block; flex: none; }
+.ai-mark .ai {
+  background: linear-gradient(90deg, #7fb0ff, #3d7bff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Ensure mobile header slide-down remains clean white and distinct with readable navigation */
@@ -664,54 +300,26 @@ header .text-white, footer .text-white {
 }
 
 #mobile-menu a.text-pci-blue {
-  color: #10b981 !important;
+  color: #1b4fd8 !important;
   font-weight: 700 !important;
 }
 
 #mobile-menu a:hover {
-  color: #10b981 !important;
+  color: #1b4fd8 !important;
 }
 
 /* Handle inputs elegantly on light/dark layouts */
 input[type="text"], input[type="email"], select, textarea {
   background-color: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #dfe5ee;
   color: #0f172a;
   outline: none;
   transition: all 0.2s ease;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
-  border-color: #10b981;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
-}
-
-/* Custom Interactive microscopy classes with green highlights */
-.microscopy-lens {
-  position: relative;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(160, 235, 190, 0.55) 0%, transparent 50%),
-    radial-gradient(circle at 70% 65%, rgba(210, 155, 100, 0.55) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(45, 110, 80, 0.90) 0%, rgba(20, 60, 42, 0.95) 60%, rgba(8, 30, 22, 1) 100%);
-  border: 4px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 0 90px rgba(52, 211, 153, 0.35), inset 0 0 45px rgba(255, 255, 255, 0.12);
-  overflow: hidden;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.microscopy-lens:hover {
-  transform: scale(1.025);
-  box-shadow: 0 0 110px rgba(52, 211, 153, 0.45), inset 0 0 55px rgba(255, 255, 255, 0.16);
-}
-
-.stained-tissue-brown {
-  background: radial-gradient(ellipse at center, rgba(210, 140, 75, 0.85) 0%, rgba(180, 118, 40, 0.45) 40%, rgba(1, 43, 29, 0) 75%);
-  filter: blur(10px);
-}
-
-.stained-tissue-blue {
-  background: radial-gradient(ellipse at center, rgba(52, 211, 153, 0.75) 0%, rgba(16, 185, 129, 0.35) 45%, rgba(1, 27, 17, 0) 75%);
-  filter: blur(12px);
+  border-color: #1b4fd8;
+  box-shadow: 0 0 0 3px rgba(27, 79, 216, 0.12);
 }
 
 /* Reveal style scroll animation offsets */
@@ -754,16 +362,24 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focu
   font-family: var(--font-heading);
 }
 
+/* On light: navy on a navy tint. On dark bands: bright teal on a teal tint (the pcibio.ai chip). */
 .badge-blue {
-  background-color: rgba(16, 185, 129, 0.08) !important;
-  color: #10b981 !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  background-color: #eef3fb !important;
+  color: #0b2e5f !important;
+  border: 1px solid #dbe6f5 !important;
 }
 
 .badge-green {
-  background-color: rgba(16, 185, 129, 0.08) !important;
-  color: #059669 !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  background-color: #ebfbf5 !important;
+  color: #0a7d68 !important;
+  border: 1px solid rgba(46, 204, 154, 0.4) !important;
+}
+
+.bg-navy .badge-blue, .bg-navy-light .badge-blue, .cta-aurora .badge-blue,
+.bg-navy .badge-green, .bg-navy-light .badge-green, .cta-aurora .badge-green {
+  background-color: rgba(46, 204, 154, 0.12) !important;
+  color: #2ecc9a !important;
+  border: 1px solid rgba(46, 204, 154, 0.35) !important;
 }
 
 /* Filter bar button active states */
@@ -771,13 +387,13 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focu
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   background-color: #ffffff;
   color: #475569;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #dfe5ee;
 }
 .filter-btn.active {
-  background-color: #10b981 !important;
+  background-color: #1b4fd8 !important;
   color: #ffffff !important;
-  border-color: #10b981 !important;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+  border-color: #1b4fd8 !important;
+  box-shadow: 0 4px 12px rgba(27, 79, 216, 0.18);
 }
 .filter-btn:hover:not(.active) {
   background-color: #f8fafc;
@@ -785,7 +401,7 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focu
   border-color: #cbd5e1;
 }
 
-/* Diagonal stripe effect */
+/* Hexagon network effect on light bands */
 .stripe-bg {
   position: relative;
   overflow: hidden;
@@ -797,28 +413,26 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focu
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='42' viewBox='0 0 24 42'%3E%3Cpath d='M12 0 L24 7 L24 21 L12 28 L0 21 L0 7 Z M12 28 L12 42' fill='none' stroke='%2310b981' stroke-width='0.6' stroke-opacity='0.10'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='42' viewBox='0 0 24 42'%3E%3Cpath d='M12 0 L24 7 L24 21 L12 28 L0 21 L0 7 Z M12 28 L12 42' fill='none' stroke='%231b4fd8' stroke-width='0.6' stroke-opacity='0.10'/%3E%3C/svg%3E");
   background-size: 36px 63px;
   background-repeat: repeat;
   z-index: 0;
   pointer-events: none;
 }
 
-/* Step-circle gradients — one continuous green → blue journey split across 3 circles.
+/* Step-circle gradients: one continuous navy → blue → teal journey split across the circles.
    End color of each matches the start color of the next so the transition reads as linear. */
 .step-circle-1 {
-  background-image: linear-gradient(135deg, #10b981 0%, #14c1c4 100%);
+  background-image: linear-gradient(135deg, #0b2e5f 0%, #1b4fd8 100%);
 }
 .step-circle-2 {
-  background-image: linear-gradient(135deg, #14c1c4 0%, #38b6f6 100%);
+  background-image: linear-gradient(135deg, #1b4fd8 0%, #1573b8 100%);
 }
 .step-circle-3 {
-  background-image: linear-gradient(135deg, #38b6f6 0%, #60a5fa 100%);
+  background-image: linear-gradient(135deg, #1573b8 0%, #0a7d68 100%);
 }
-
-/* Solid slide viewer custom shadows */
-.vignette {
-  box-shadow: inset 0 0 60px rgba(0,0,0,0.85);
+.step-circle-4 {
+  background-image: linear-gradient(135deg, #0a7d68 0%, #12907a 100%);
 }
 
 /* Nav links highlight effect */
@@ -833,7 +447,7 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focu
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #34d399; /* Beautiful emerald green highlight */
+  background-color: #2ecc9a; /* bright teal highlight */
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -848,16 +462,26 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focu
 }
 .hover-lift:hover {
   transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08) !important;
-  border-color: #cbd5e1 !important;
+  box-shadow: 0 16px 40px rgba(11, 46, 95, 0.10) !important;
+  border-color: #c5d0de !important;
 }
 
 /* Premium standard styling for product and comparison layouts */
 .product-card {
   background-color: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 1rem;
+  border: 1px solid #dfe5ee !important;
+  border-radius: 10px;
 }
+
+/* The teaser video and other media frames */
+.media-frame {
+  background: #061a38;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px -24px rgba(6, 26, 56, 0.7);
+}
+.media-frame video, .media-frame img { display: block; width: 100%; height: auto; }
 
 /* ============================================================
    Houston Biotech community — auto-scrolling logo marquee
@@ -914,26 +538,26 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focu
 
 /* Frosted-glass CTA panel — sits on top of the body's hex pattern */
 .glass-cta {
-  background: rgba(1, 43, 26, 0.55);
+  background: rgba(11, 46, 95, 0.55);
   backdrop-filter: blur(10px) saturate(140%);
   -webkit-backdrop-filter: blur(10px) saturate(140%);
   border: 1.5px solid rgba(255, 255, 255, 0.35);
   box-shadow:
-    0 24px 70px -22px rgba(1, 43, 26, 0.55),
+    0 24px 70px -22px rgba(6, 26, 56, 0.55),
     0 0 0 1px rgba(255, 255, 255, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.18),
     inset 0 -1px 0 rgba(255, 255, 255, 0.06);
   color: #f8fafc;
 }
 
-/* CTA — black -> kelly-lime vertical gradient with softly drifting aurora orbs */
+/* CTA — deep navy -> action blue vertical gradient with softly drifting aurora orbs */
 .cta-aurora {
   background: linear-gradient(180deg,
-    #030905 0%,
-    #05170e 30%,
-    #0b3a24 60%,
-    #124e30 82%,
-    #1a7a48 100%);
+    #061a38 0%,
+    #0b2e5f 30%,
+    #143a73 60%,
+    #1a47a8 82%,
+    #1b4fd8 100%);
 }
 .cta-orbs { overflow: hidden; }
 .cta-orbs .orb {
@@ -945,19 +569,19 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focu
   will-change: transform;
 }
 .orb-1 { width: 520px; height: 520px; left: -100px; top: -160px;
-  background: radial-gradient(circle, rgba(5,120,80,1), transparent 70%);
+  background: radial-gradient(circle, rgba(27,79,216,1), transparent 70%);
   animation: orb-float-a 13s ease-in-out infinite; }
 .orb-2 { width: 460px; height: 460px; right: -80px; top: -120px;
-  background: radial-gradient(circle, rgba(6,95,70,1), transparent 70%);
+  background: radial-gradient(circle, rgba(20,58,115,1), transparent 70%);
   animation: orb-float-b 16s ease-in-out infinite; }
 .orb-3 { width: 440px; height: 440px; left: 26%;   bottom: -200px;
-  background: radial-gradient(circle, rgba(4,120,87,1), transparent 70%);
+  background: radial-gradient(circle, rgba(10,125,104,0.9), transparent 70%);
   animation: orb-float-c 19s ease-in-out infinite; }
 .orb-4 { width: 360px; height: 360px; left: 56%;   top: 2%;
-  background: radial-gradient(circle, rgba(16,120,90,0.95), transparent 70%);
+  background: radial-gradient(circle, rgba(61,123,255,0.9), transparent 70%);
   animation: orb-float-b 15s ease-in-out infinite reverse; }
 .orb-5 { width: 340px; height: 340px; right: 16%;  bottom: -110px;
-  background: radial-gradient(circle, rgba(6,78,59,0.95), transparent 70%);
+  background: radial-gradient(circle, rgba(46,204,154,0.55), transparent 70%);
   animation: orb-float-c 21s ease-in-out infinite reverse; }
 @keyframes orb-float-a {
   0%,100% { transform: translate(0, 0) scale(1); }
@@ -982,14 +606,12 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focu
 
 /* ------------------------------------------------------------------
    Global keyboard-focus indicator.
-   The site had none, which is a WCAG 2.4.7 fail and hurts every
-   keyboard user (lab staff often work keyboard-first).
    :focus-visible only fires on keyboard focus, not mouse clicks,
    so it doesn't add visual noise for pointer users.
    ------------------------------------------------------------------ */
 *:focus { outline: none; }
 *:focus-visible {
-  outline: 2px solid #10b981;      /* emerald-500 — matches brand */
+  outline: 2px solid #1b4fd8;      /* action blue, as on pcibio.ai */
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -997,16 +619,18 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focu
 a:focus-visible, button:focus-visible {
   border-radius: 8px;
 }
-/* Ring inside a dark hero shouldn't be lost against navy */
+/* Ring inside a dark band shouldn't be lost against navy */
 .bg-navy *:focus-visible,
+.bg-navy-light *:focus-visible,
+.cta-aurora *:focus-visible,
 header *:focus-visible {
-  outline-color: #6ee7b7;          /* emerald-300 — lifts on dark */
+  outline-color: #2ecc9a;          /* bright teal lifts on dark */
 }
 
 /* Skip link: hidden until keyboard focus */
 .skip-link {
   position: absolute; left: 1rem; top: -60px; z-index: 1000;
-  background: #fff; color: #012b1a; padding: 0.6rem 1rem; border-radius: 8px;
+  background: #fff; color: #0b2e5f; padding: 0.6rem 1rem; border-radius: 8px;
   font-weight: 600; text-decoration: none; box-shadow: 0 4px 16px rgba(0,0,0,.2);
 }
 .skip-link:focus { top: 0.75rem; }

@@ -6,7 +6,7 @@
   <title>Products · Precision Cellular Immunology</title>
   <meta name="description" content="Shop TriControl, QuadControl and DualControl cell line IHC control slides and FFPE blocks for p53, MMR, PD-L1, HER2 and more.">
   <link rel="canonical" href="https://pcibio.com/products.html">
-  <meta name="theme-color" content="#012b1a">
+  <meta name="theme-color" content="#0b2e5f">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Precision Cellular Immunology">
   <meta property="og:title" content="Products · Precision Cellular Immunology">
@@ -27,7 +27,7 @@
         <!-- Logo -->
         <a href="index.html" class="flex items-center gap-2 focus:outline-none select-none group" id="nav-logo">
           <img src="logo.svg" alt="Precision Cellular Immunology Logo" class="h-11 w-auto object-contain shrink-0 transition-all duration-300 group-hover:scale-105" />
-          <span id="nav-logo-text" aria-label="PCI" class="select-none font-bold leading-none text-[38px] md:text-[44px] tracking-tight text-white transition-all duration-300 group-hover:scale-105" style="font-family:'Zilla Slab',serif;">PCI</span>
+          <span id="nav-logo-text" aria-label="PCI" class="select-none font-bold leading-none text-[38px] md:text-[44px] tracking-tight text-white transition-all duration-300 group-hover:scale-105" style="font-family:'IBM Plex Sans',sans-serif;font-weight:700;">PCI</span>
         </a>
 
         <!-- Desktop Navigation Links -->
@@ -45,7 +45,7 @@
             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
-            <span id="cart-badge" class="hidden absolute top-0 right-0 bg-emerald-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full min-w-[16px] text-center border border-emerald-600 shadow-sm animate-pulse">0</span>
+            <span id="cart-badge" class="hidden absolute top-0 right-0 bg-pci-blue text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full min-w-[16px] text-center border border-pci-blue shadow-sm animate-pulse">0</span>
           </button>
 
           <a href="viewer.html" class="bg-transparent hover:bg-white hover:text-black text-white text-xs font-semibold px-4 py-2 rounded-lg border border-white/40 transition-all duration-150 flex items-center gap-1.5" id="btn-viewer-launch">
@@ -57,14 +57,14 @@
         <!-- Mobile Header Icons -->
         <div class="flex items-center lg:hidden gap-2">
           <!-- Mobile Shopping Cart Icon -->
-          <button id="cart-toggle-btn-mobile" class="relative text-white hover:text-emerald-400 transition-colors p-2 flex items-center">
+          <button id="cart-toggle-btn-mobile" class="relative text-white hover:text-teal-bright transition-colors p-2 flex items-center">
             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
-            <span id="cart-badge-mobile" class="hidden absolute top-0 right-0 bg-emerald-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full min-w-[16px] text-center shadow-sm">0</span>
+            <span id="cart-badge-mobile" class="hidden absolute top-0 right-0 bg-pci-blue text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full min-w-[16px] text-center shadow-sm">0</span>
           </button>
           
-          <button id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="text-white hover:text-pci-blue-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-400 p-2 rounded-lg hover:bg-white/10">
+          <button id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="text-white hover:text-teal-bright focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal-bright p-2 rounded-lg hover:bg-white/10">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
           </button>
         </div>
@@ -122,7 +122,7 @@
           </div>
           <div class="flex items-center gap-3 ml-auto">
             <span id="pci-filter-count" class="text-xs text-slate-600 font-mono"></span>
-            <button id="pci-filter-clear" class="hidden text-xs font-semibold text-emerald-700 hover:text-emerald-800 underline underline-offset-2">Clear filters</button>
+            <button id="pci-filter-clear" class="hidden text-xs font-semibold text-pci-blue hover:text-pci-blue-hover underline underline-offset-2">Clear filters</button>
           </div>
         </div>
       </div>
@@ -131,17 +131,17 @@
         .pci-filter-chip {
           display: inline-flex; align-items: baseline; gap: 6px;
           padding: 8px 14px; border-radius: 9999px;
-          font: 600 12px/1 "Inter", "Segoe UI", Arial, sans-serif;
+          font: 600 12px/1 "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
           background: #fff; color: #374151;
           border: 1px solid rgba(148, 163, 184, .5);
           cursor: pointer; transition: background .15s, border-color .15s, color .15s;
         }
         .pci-filter-chip:hover { background: #f8fafc; border-color: #64748b; }
         .pci-filter-chip.is-active {
-          background: #10b981; color: #fff; border-color: #059669;
+          background: #1b4fd8; color: #fff; border-color: #0a7d68;
         }
         .pci-filter-chip .chip-count {
-          font-family: "JetBrains Mono", ui-monospace, monospace;
+          font-family: "IBM Plex Mono", ui-monospace, monospace;
           font-size: 10px; opacity: .7;
         }
         .pci-filter-chip.is-active .chip-count { opacity: .9; }
@@ -176,7 +176,7 @@
     <!-- Cart Header -->
     <div class="p-6 border-b border-slate-100 flex items-center justify-between">
       <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
-        <svg class="w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+        <svg class="w-5 h-5 text-pci-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
         Your Laboratory Order Cart
       </h3>
       <button id="cart-close-btn" class="text-slate-400 hover:text-slate-800 p-2 rounded-lg hover:bg-slate-50 transition-all focus:outline-none">
@@ -193,7 +193,7 @@
         <p class="text-sm font-semibold text-slate-700">Your cart is currently empty</p>
         <p class="text-xs text-slate-400 max-w-xs mx-auto">Select histological controls and slides from our catalog to build your laboratory validation kit.</p>
         <div class="pt-4">
-          <button id="btn-cart-continue" class="bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-colors">Shop Controls</button>
+          <button id="btn-cart-continue" class="bg-pci-blue hover:bg-pci-blue-hover text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-colors">Shop Controls</button>
         </div>
       </div>
     </div>
@@ -206,7 +206,7 @@
       </div>
       <p class="text-[10px] text-slate-400 leading-relaxed">Tax and institutional clinical shipping are calculated at secure checkout.</p>
 
-      <button id="cart-checkout-btn" class="w-full bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold py-3.5 rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
+      <button id="cart-checkout-btn" class="w-full bg-pci-blue hover:bg-pci-blue-hover text-white text-xs font-bold py-3.5 rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
         Checkout
         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
       </button>
@@ -220,8 +220,8 @@
   <!-- CHECKOUT SUCCESS MODAL (INLINE, HIDDEN) -->
   <div id="checkout-modal-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-md z-[110] transition-opacity duration-300 opacity-0 pointer-events-none flex items-center justify-center px-4">
     <div id="checkout-modal" class="bg-white rounded-3xl max-w-md w-full p-8 border border-slate-200/80 shadow-2xl space-y-6 text-center transform scale-95 transition-all duration-300">
-      <div class="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center mx-auto border border-emerald-100">
-        <svg class="w-8 h-8 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+      <div class="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto border border-teal-100">
+        <svg class="w-8 h-8 text-pci-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
       </div>
       <div class="space-y-2">
         <h3 class="text-xl font-heading font-bold text-slate-900">Laboratory Order Proposed</h3>
@@ -244,7 +244,7 @@
         <div class="md:col-span-5 space-y-4">
           <a href="index.html" class="flex items-center gap-2 focus:outline-none select-none group" id="footer-logo">
             <img src="logo.svg" alt="Precision Cellular Immunology Logo" class="h-11 w-auto object-contain shrink-0 transition-all duration-300 group-hover:scale-105" />
-            <span aria-label="PCI" class="select-none font-bold leading-none text-[38px] md:text-[44px] tracking-tight text-white transition-all duration-300 group-hover:scale-105" style="font-family:'Zilla Slab',serif;">PCI</span>
+            <span aria-label="PCI" class="select-none font-bold leading-none text-[38px] md:text-[44px] tracking-tight text-white transition-all duration-300 group-hover:scale-105" style="font-family:'IBM Plex Sans',sans-serif;font-weight:700;">PCI</span>
           </a>
           <p class="text-sm font-light leading-relaxed max-w-sm">
             "Precision IHC Controls. AI-Powered Assessment." <br>
@@ -252,8 +252,8 @@
           </p>
           <div class="text-sm space-y-2 font-mono text-gray-500 pt-2">
             <div><svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 mr-1 align-middle" fill="currentColor" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>CUBiO Innovation Hub, Houston, TX 77054</div>
-            <div><svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 mr-1 align-middle" fill="currentColor" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg><a href="mailto:support@pcibio.com" class="hover:text-pci-blue-light transition-colors">support@pcibio.com</a></div>
-            <div><svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 mr-1 align-middle" fill="currentColor" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg><a href="https://www.linkedin.com/company/precision-cellular-immunology" target="_blank" rel="noopener" class="hover:text-pci-blue-light transition-colors">precision-cellular-immunology</a></div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 mr-1 align-middle" fill="currentColor" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg><a href="mailto:support@pcibio.com" class="hover:text-teal-bright transition-colors">support@pcibio.com</a></div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 mr-1 align-middle" fill="currentColor" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg><a href="https://www.linkedin.com/company/precision-cellular-immunology" target="_blank" rel="noopener" class="hover:text-teal-bright transition-colors">precision-cellular-immunology</a></div>
           </div>
         </div>
 
@@ -261,13 +261,13 @@
         <div class="md:col-span-3 space-y-4">
           <h4 class="text-white font-heading font-semibold text-xs tracking-widest uppercase">Quick Links</h4>
           <nav class="flex flex-col space-y-2.5 text-sm">
-            <a href="index.html" class="hover:text-pci-blue-light transition-colors">Home</a>
-            <a href="products.html" class="hover:text-pci-blue-light transition-colors">Product Catalog</a>
-            <a href="controls.html" class="hover:text-pci-blue-light transition-colors">IHC QC Controls</a>
-            <a href="ai.html" class="hover:text-pci-blue-light transition-colors">AI & Viewer</a>
-            <a href="education.html" class="hover:text-pci-blue-light transition-colors">Digital Pathology Education</a>
-            <a href="about.html" class="hover:text-pci-blue-light transition-colors">About PCI & Team</a>
-            <a href="contact.html" class="hover:text-pci-blue-light transition-colors">Contact Us</a>
+            <a href="index.html" class="hover:text-teal-bright transition-colors">Home</a>
+            <a href="products.html" class="hover:text-teal-bright transition-colors">Product Catalog</a>
+            <a href="controls.html" class="hover:text-teal-bright transition-colors">IHC QC Controls</a>
+            <a href="ai.html" class="hover:text-teal-bright transition-colors">AI & Viewer</a>
+            <a href="education.html" class="hover:text-teal-bright transition-colors">Digital Pathology Education</a>
+            <a href="about.html" class="hover:text-teal-bright transition-colors">About PCI & Team</a>
+            <a href="contact.html" class="hover:text-teal-bright transition-colors">Contact Us</a>
           </nav>
         </div>
 
@@ -278,7 +278,7 @@
             New: Digital Slide Viewer is launching soon for external beta cohorts at <strong class="text-gray-200">pcibio.ai</strong>.
           </p>
           <div class="pt-2">
-            <a href="viewer.html" class="inline-flex items-center gap-1.5 bg-pci-blue hover:bg-pci-blue-light text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition-all" id="btn-footer-launch">
+            <a href="viewer.html" class="inline-flex items-center gap-1.5 bg-pci-blue hover:bg-pci-blue-hover text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition-all" id="btn-footer-launch">
               <span>Open Slide Viewer</span>
               <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
             </a>

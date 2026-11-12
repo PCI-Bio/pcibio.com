@@ -29,16 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
       navLinks.forEach(link => {
         if (link.classList.contains('active')) {
-          link.className = "nav-link active text-emerald-600 text-sm font-semibold transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-emerald-600";
+          link.className = "nav-link active text-pci-blue text-sm font-semibold transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-pci-blue";
         } else {
-          link.className = "nav-link text-gray-600 text-sm font-medium transition-colors hover:text-emerald-600";
+          link.className = "nav-link text-gray-600 text-sm font-medium transition-colors hover:text-pci-blue-hover";
         }
       });
       if (launchBtn) {
-        launchBtn.className = "bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-1.5";
+        launchBtn.className = "bg-pci-blue hover:bg-pci-blue-hover text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-1.5";
       }
       if (mobileMenuBtn) {
-        mobileMenuBtn.className = "text-gray-600 hover:text-emerald-600 focus:outline-none p-2 rounded-lg hover:bg-gray-100";
+        mobileMenuBtn.className = "text-gray-600 hover:text-pci-blue-hover focus:outline-none p-2 rounded-lg hover:bg-gray-100";
       }
       // Update cart toggler colors
       const cartToggle = document.getElementById('cart-toggle-btn');
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         launchBtn.className = "bg-transparent hover:bg-white hover:text-black text-white text-xs font-semibold px-4 py-2 rounded-lg border border-white/40 transition-all duration-150 flex items-center gap-1.5";
       }
       if (mobileMenuBtn) {
-        mobileMenuBtn.className = "text-white hover:text-pci-blue-light focus:outline-none p-2 rounded-lg hover:bg-white/10";
+        mobileMenuBtn.className = "text-white hover:text-teal-bright focus:outline-none p-2 rounded-lg hover:bg-white/10";
       }
       const cartToggle = document.getElementById('cart-toggle-btn');
       if (cartToggle) cartToggle.classList.replace('text-gray-600', 'text-white/85');
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const thumbs = thumbContainer.querySelectorAll('.thumb-item');
     thumbs.forEach((thumb, tIndex) => {
       if (tIndex === index) {
-        thumb.className = "thumb-item w-14 h-14 md:w-full aspect-square bg-white rounded-xl border-2 border-emerald-600 p-1 cursor-pointer transition-all shrink-0 flex items-center justify-center";
+        thumb.className = "thumb-item w-14 h-14 md:w-full aspect-square bg-white rounded-xl border-2 border-pci-blue p-1 cursor-pointer transition-all shrink-0 flex items-center justify-center";
       } else {
         thumb.className = "thumb-item w-14 h-14 md:w-full aspect-square bg-white rounded-xl border border-slate-200 hover:border-slate-400 p-1 cursor-pointer transition-all shrink-0 flex items-center justify-center";
       }
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
   thumbContainer.innerHTML = '';
   galleryImages.forEach((imgUrl, idx) => {
     const btn = document.createElement('div');
-    btn.className = `thumb-item w-14 h-14 md:w-full aspect-square bg-white rounded-xl border p-1 cursor-pointer transition-all shrink-0 flex items-center justify-center ${idx === 0 ? 'border-2 border-emerald-600' : 'border-slate-200 hover:border-slate-400'}`;
+    btn.className = `thumb-item w-14 h-14 md:w-full aspect-square bg-white rounded-xl border p-1 cursor-pointer transition-all shrink-0 flex items-center justify-center ${idx === 0 ? 'border-2 border-pci-blue' : 'border-slate-200 hover:border-slate-400'}`;
     btn.innerHTML = `<img src="${imgUrl}" alt="Gallery Thumbnail ${idx+1}" class="max-w-full max-h-full object-contain rounded-lg" referrerPolicy="no-referrer" loading="lazy" decoding="async">`;
     btn.addEventListener('click', () => updateMainImage(idx));
     thumbContainer.appendChild(btn);
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <span class="font-mono text-xs font-bold text-slate-800">$${itemCost.toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>
           </div>
-          <a href="${detailsHref}" class="mt-2 inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 hover:text-emerald-600">
+          <a href="${detailsHref}" class="mt-2 inline-flex items-center gap-1 text-[11px] font-bold text-pci-blue hover:text-pci-blue-hover">
             View product
             <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
           </a>
@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
           <span class="text-sm font-bold text-gray-900 font-mono">$${item.price.toLocaleString('en-US')}</span>
-          <a href="product.html?code=${item.code}" class="bg-emerald-700 hover:bg-emerald-600 text-white text-[11px] font-bold px-3.5 py-1.5 rounded-lg transition-colors">Details →</a>
+          <a href="product.html?code=${item.code}" class="bg-pci-blue hover:bg-pci-blue-hover text-white text-[11px] font-bold px-3.5 py-1.5 rounded-lg transition-colors">Details →</a>
         </div>
       `;
 

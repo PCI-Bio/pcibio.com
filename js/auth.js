@@ -456,9 +456,9 @@ function injectStyles() {
   s.id = 'pci-auth-styles';
   s.textContent = `
     /* Sign-in is a secondary CTA — a ghost text link, not a filled pill.
-       Slide Viewer (emerald) is the primary. Colour keys off the sticky
+       The nav links are the primary. Colour keys off the sticky
        header's background class so it stays readable in both nav states. */
-    .pci-account-btn{font:600 13px/1 "Inter",sans-serif;background:transparent;
+    .pci-account-btn{font:600 13px/1 "IBM Plex Sans",sans-serif;background:transparent;
       border:none;padding:8px 4px;cursor:pointer;color:rgba(255,255,255,.9);
       transition:color .15s ease,text-decoration-color .15s ease;
       text-decoration:underline transparent 2px;text-underline-offset:6px}
@@ -466,85 +466,85 @@ function injectStyles() {
     /* When the nav flips to its scrolled/white state, use a dark ink colour so
        the link stays legible on white. */
     #main-navbar[class*="bg-white"] .pci-account-btn{color:#0f172a}
-    #main-navbar[class*="bg-white"] .pci-account-btn:hover{color:#059669}
-    .pci-auth-overlay{display:none;position:fixed;inset:0;z-index:300;background:rgba(1,43,26,.45);
+    #main-navbar[class*="bg-white"] .pci-account-btn:hover{color:#0a7d68}
+    .pci-auth-overlay{display:none;position:fixed;inset:0;z-index:300;background:rgba(6,26,56,.45);
       backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:16px}
     .pci-auth-modal{position:relative;background:#fff;border-radius:24px;max-width:400px;width:100%;
-      padding:32px;box-shadow:0 24px 60px rgba(1,43,26,.28);font-family:"Inter",sans-serif}
-    .pci-auth-modal h3{font:700 22px/1.2 "Sora","Inter",sans-serif;color:#012b1a;margin:0 0 8px}
+      padding:32px;box-shadow:0 24px 60px rgba(6,26,56,.28);font-family:"IBM Plex Sans",sans-serif}
+    .pci-auth-modal h3{font:700 22px/1.2 "IBM Plex Sans",sans-serif;color:#0b2e5f;margin:0 0 8px}
     .pci-auth-sub{font-size:13px;color:#475569;margin:0 0 20px}
     .pci-auth-form{display:flex;flex-direction:column;gap:10px}
     .pci-auth-signup-fields{display:flex;flex-direction:column;gap:10px}
     .pci-auth-row{display:flex;gap:8px}
     .pci-auth-row .pci-auth-input{flex:1;min-width:0}
     .pci-auth-input{border:1px solid #cbd5e1;border-radius:12px;padding:12px 14px;font-size:14px;outline:none}
-    .pci-auth-input:focus{border-color:#10b981;box-shadow:0 0 0 3px rgba(16,185,129,.15)}
-    .pci-auth-submit{background:#012b1a;color:#fff;border:none;border-radius:12px;padding:12px;
-      font:700 14px "Inter",sans-serif;cursor:pointer;transition:background .15s}
-    .pci-auth-submit:hover{background:#044e35}
+    .pci-auth-input:focus{border-color:#1b4fd8;box-shadow:0 0 0 3px rgba(27,79,216,.15)}
+    .pci-auth-submit{background:#0b2e5f;color:#fff;border:none;border-radius:12px;padding:12px;
+      font:700 14px "IBM Plex Sans",sans-serif;cursor:pointer;transition:background .15s}
+    .pci-auth-submit:hover{background:#143a73}
     .pci-auth-submit:disabled{opacity:.6;cursor:default}
     .pci-auth-close{position:absolute;top:14px;right:16px;border:none;background:none;font-size:26px;
       line-height:1;color:#94a3b8;cursor:pointer}
     .pci-auth-msg{font-size:13px;margin:14px 0 0}
-    .pci-auth-ok{color:#059669}
+    .pci-auth-ok{color:#0a7d68}
     .pci-auth-err{color:#e11d48}
     .pci-auth-toggle{font-size:13px;color:#475569;margin:16px 0 0;text-align:center}
-    .pci-auth-switch{color:#059669;font-weight:600;text-decoration:none}
+    .pci-auth-switch{color:#0a7d68;font-weight:600;text-decoration:none}
     .pci-auth-switch:hover{text-decoration:underline}
     .pci-auth-google{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;
-      background:#fff;border:1px solid #cbd5e1;border-radius:12px;padding:11px;font:600 14px "Inter",sans-serif;
+      background:#fff;border:1px solid #cbd5e1;border-radius:12px;padding:11px;font:600 14px "IBM Plex Sans",sans-serif;
       color:#334155;cursor:pointer;transition:background .15s,border-color .15s}
     .pci-auth-google:hover{background:#f8fafc;border-color:#94a3b8}
     .pci-auth-divider{display:flex;align-items:center;gap:12px;margin:16px 0;color:#94a3b8;font-size:12px}
     .pci-auth-divider::before,.pci-auth-divider::after{content:"";flex:1;height:1px;background:#e2e8f0}
     .pci-acct-pop{position:fixed;z-index:310;background:#fff;border:1px solid #e2e8f0;border-radius:14px;
-      box-shadow:0 20px 48px rgba(1,43,26,.20);min-width:280px;padding:10px;font-family:"Inter",sans-serif;
+      box-shadow:0 20px 48px rgba(6,26,56,.20);min-width:280px;padding:10px;font-family:"IBM Plex Sans",sans-serif;
       animation:pciPopIn .16s ease-out both}
     @keyframes pciPopIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
     .pci-acct-hd{display:flex;align-items:center;gap:12px;padding:10px 10px 14px;border-bottom:1px solid #f1f5f9;margin-bottom:6px}
-    .pci-acct-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#10b981,#012b1a);
+    .pci-acct-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#1b4fd8,#0b2e5f);
       color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex-shrink:0}
     .pci-acct-info{min-width:0;flex:1}
-    .pci-acct-name{font-weight:700;font-size:14px;color:#012b1a;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .pci-acct-name{font-weight:700;font-size:14px;color:#0b2e5f;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
     .pci-acct-email{font-size:11px;color:#64748b;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:2px}
     .pci-acct-status{font-size:10px;line-height:1.3;margin-top:3px;font-weight:600}
-    .pci-acct-status.ok{color:#059669}
+    .pci-acct-status.ok{color:#0a7d68}
     .pci-acct-status.warn{color:#d97706}
     .pci-acct-item{display:flex;align-items:center;gap:12px;padding:9px 10px;border-radius:8px;
-      color:#012b1a;text-decoration:none;transition:background .12s}
-    .pci-acct-item:hover{background:#f0fdf4}
+      color:#0b2e5f;text-decoration:none;transition:background .12s}
+    .pci-acct-item:hover{background:#ebfbf5}
     .pci-acct-icon{width:28px;height:28px;display:flex;align-items:center;justify-content:center;
       background:#f1f5f9;border-radius:8px;flex-shrink:0;color:#475569}
     .pci-acct-icon svg{width:14px;height:14px}
-    .pci-acct-item:hover .pci-acct-icon{background:#10b981;color:#fff}
-    .pci-acct-label{font-size:13px;font-weight:600;color:#012b1a;line-height:1.2}
+    .pci-acct-item:hover .pci-acct-icon{background:#1b4fd8;color:#fff}
+    .pci-acct-label{font-size:13px;font-weight:600;color:#0b2e5f;line-height:1.2}
     .pci-acct-desc{font-size:11px;color:#64748b;line-height:1.3;margin-top:1px}
     .pci-acct-sep{height:1px;background:#f1f5f9;margin:6px 4px}
-    .pci-acct-signout{width:100%;background:#fff;color:#012b1a;border:1px solid #cbd5e1;border-radius:10px;
-      padding:9px;font:600 13px "Inter",sans-serif;cursor:pointer;transition:all .15s}
-    .pci-acct-signout:hover{background:#012b1a;color:#fff;border-color:#012b1a}
+    .pci-acct-signout{width:100%;background:#fff;color:#0b2e5f;border:1px solid #cbd5e1;border-radius:10px;
+      padding:9px;font:600 13px "IBM Plex Sans",sans-serif;cursor:pointer;transition:all .15s}
+    .pci-acct-signout:hover{background:#0b2e5f;color:#fff;border-color:#0b2e5f}
     .pci-toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);z-index:400;
-      background:#012b1a;color:#fff;padding:12px 20px;border-radius:12px;font:500 13px "Inter",sans-serif;
-      box-shadow:0 12px 32px rgba(1,43,26,.35);opacity:0;transition:opacity .24s,transform .24s;max-width:90vw}
+      background:#0b2e5f;color:#fff;padding:12px 20px;border-radius:12px;font:500 13px "IBM Plex Sans",sans-serif;
+      box-shadow:0 12px 32px rgba(6,26,56,.35);opacity:0;transition:opacity .24s,transform .24s;max-width:90vw}
     .pci-toast.pci-toast-in{opacity:1;transform:translate(-50%,0)}
     .pci-toast.pci-toast-error{background:#b91c1c}
     .pci-verify-overlay .pci-verify-icon{width:56px;height:56px;border-radius:50%;
-      background:linear-gradient(135deg,#10b981,#012b1a);color:#fff;display:flex;
+      background:linear-gradient(135deg,#1b4fd8,#0b2e5f);color:#fff;display:flex;
       align-items:center;justify-content:center;font-size:26px;margin:0 auto 16px}
     .pci-verify-overlay .pci-auth-title,.pci-verify-overlay .pci-auth-sub{text-align:center}
     .pci-verify-resend{margin-top:6px}
     .pci-auth-pending{display:flex;flex-direction:column;text-align:center}
     .pci-auth-pending[hidden]{display:none}
     .pci-auth-pending .pci-verify-icon{width:56px;height:56px;border-radius:50%;
-      background:linear-gradient(135deg,#10b981,#012b1a);color:#fff;display:flex;
+      background:linear-gradient(135deg,#1b4fd8,#0b2e5f);color:#fff;display:flex;
       align-items:center;justify-content:center;margin:0 auto 16px}
     .pci-auth-hint{font-size:12px;color:#64748b;margin:-8px 0 16px}
-    .pci-auth-resend-inline{margin-top:8px;background:none;border:none;padding:0;color:#059669;
-      font:600 13px "Inter",sans-serif;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+    .pci-auth-resend-inline{margin-top:8px;background:none;border:none;padding:0;color:#0a7d68;
+      font:600 13px "IBM Plex Sans",sans-serif;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
     .pci-auth-resend-inline:disabled{color:#94a3b8;cursor:default;text-decoration:none}
     .pci-auth-submit:disabled.pci-pending-resend{background:#64748b}
-    .pci-verify-check{width:100%;margin-top:8px;background:#fff;color:#012b1a;
-      border:1px solid #cbd5e1;border-radius:12px;padding:12px;font:600 14px "Inter",sans-serif;cursor:pointer}
-    .pci-verify-check:hover{background:#f8fafc;border-color:#012b1a}`;
+    .pci-verify-check{width:100%;margin-top:8px;background:#fff;color:#0b2e5f;
+      border:1px solid #cbd5e1;border-radius:12px;padding:12px;font:600 14px "IBM Plex Sans",sans-serif;cursor:pointer}
+    .pci-verify-check:hover{background:#f8fafc;border-color:#0b2e5f}`;
   document.head.appendChild(s);
 }

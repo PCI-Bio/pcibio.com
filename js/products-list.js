@@ -29,16 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
       navLinks.forEach(link => {
         if (link.classList.contains('active')) {
-          link.className = "nav-link active text-emerald-600 text-sm font-semibold transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-emerald-600";
+          link.className = "nav-link active text-pci-blue text-sm font-semibold transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-pci-blue";
         } else {
-          link.className = "nav-link text-gray-600 text-sm font-medium transition-colors hover:text-emerald-600";
+          link.className = "nav-link text-gray-600 text-sm font-medium transition-colors hover:text-pci-blue-hover";
         }
       });
       if (launchBtn) {
-        launchBtn.className = "bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-1.5";
+        launchBtn.className = "bg-pci-blue hover:bg-pci-blue-hover text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-1.5";
       }
       if (mobileMenuBtn) {
-        mobileMenuBtn.className = "text-gray-600 hover:text-emerald-600 focus:outline-none p-2 rounded-lg hover:bg-gray-100";
+        mobileMenuBtn.className = "text-gray-600 hover:text-pci-blue-hover focus:outline-none p-2 rounded-lg hover:bg-gray-100";
       }
       const cartToggle = document.getElementById('cart-toggle-btn');
       if (cartToggle) cartToggle.classList.replace('text-white/85', 'text-gray-600');
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         launchBtn.className = "bg-transparent hover:bg-white hover:text-black text-white text-xs font-semibold px-4 py-2 rounded-lg border border-white/40 transition-all duration-150 flex items-center gap-1.5";
       }
       if (mobileMenuBtn) {
-        mobileMenuBtn.className = "text-white hover:text-pci-blue-light focus:outline-none p-2 rounded-lg hover:bg-white/10";
+        mobileMenuBtn.className = "text-white hover:text-teal-bright focus:outline-none p-2 rounded-lg hover:bg-white/10";
       }
       const cartToggle = document.getElementById('cart-toggle-btn');
       if (cartToggle) cartToggle.classList.replace('text-gray-600', 'text-white/85');
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         : item.type.includes('Dual') 
           ? 'bg-amber-50 text-amber-600'
           : item.type.includes('Quad')
-            ? 'bg-emerald-50 text-emerald-600'
+            ? 'bg-teal-50 text-teal'
             : 'bg-slate-100 text-slate-700';
 
       const thumbSrc = item.image ? item.image : (item.imageType === 'block' ? blockImgUrl : slideImgUrl);
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="${thumbSrc}" alt="${item.name}" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" referrerPolicy="no-referrer" loading="lazy" decoding="async">
           </a>
 
-          <h3 class="text-base font-bold text-gray-900 mb-1 leading-tight hover:text-emerald-700 transition-colors">
+          <h3 class="text-base font-bold text-gray-900 mb-1 leading-tight hover:text-pci-blue-hover transition-colors">
             <a href="product.html?code=${item.code}">${item.name}</a>
           </h3>
           <p class="text-[11px] text-gray-500 mb-3 font-mono">${item.code}</p>
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         
         <div>
-          <a href="product.html?code=${item.code}" class="flex items-center text-xs text-emerald-700 hover:text-emerald-600 font-semibold mb-4 transition-colors">
+          <a href="product.html?code=${item.code}" class="flex items-center text-xs text-pci-blue hover:text-pci-blue-hover font-semibold mb-4 transition-colors">
             View Details & Order →
           </a>
           <div class="pt-5 border-t border-slate-100 flex items-center justify-between">
@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <span class="font-mono text-xs font-bold text-slate-800">$${itemCost.toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>
           </div>
-          <a href="${detailsHref}" class="mt-2 inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 hover:text-emerald-600">
+          <a href="${detailsHref}" class="mt-2 inline-flex items-center gap-1 text-[11px] font-bold text-pci-blue hover:text-pci-blue-hover">
             View product
             <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
           </a>

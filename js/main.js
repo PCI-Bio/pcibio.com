@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Update button — Slide Viewer stays the primary emerald CTA in both states.
       if (launchBtn) {
-        launchBtn.className = "bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold px-4 py-2 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-1.5";
+        launchBtn.className = "bg-pci-blue hover:bg-pci-blue-hover text-white text-xs font-bold px-4 py-2 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-1.5";
       }
 
       // Update hamburger button
       if (mobileMenuBtn) {
-        mobileMenuBtn.className = "text-gray-600 hover:text-pci-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-400 p-2 rounded-lg hover:bg-gray-100";
+        mobileMenuBtn.className = "text-gray-600 hover:text-pci-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal-bright p-2 rounded-lg hover:bg-gray-100";
       }
     } else {
       // Dark transparent state (matches attached image)
@@ -66,12 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Update button — Slide Viewer stays the primary emerald CTA in both states.
       if (launchBtn) {
-        launchBtn.className = "bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold px-4 py-2 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-1.5";
+        launchBtn.className = "bg-pci-blue hover:bg-pci-blue-hover text-white text-xs font-bold px-4 py-2 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-1.5";
       }
 
       // Update hamburger button
       if (mobileMenuBtn) {
-        mobileMenuBtn.className = "text-white hover:text-pci-blue-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-400 p-2 rounded-lg hover:bg-white/10";
+        mobileMenuBtn.className = "text-white hover:text-teal-bright focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal-bright p-2 rounded-lg hover:bg-white/10";
       }
     }
   };
@@ -452,13 +452,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (uploaderStatusText) {
           uploaderStatusText.innerHTML = `
             <div class="flex flex-col items-center justify-center p-3 text-center">
-              <div class="w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center mb-1">
-                <svg class="h-6 w-6 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div class="w-10 h-10 bg-teal-50 rounded-full flex items-center justify-center mb-1">
+                <svg class="h-6 w-6 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <p class="text-xs font-semibold text-gray-900">${fileName.substring(0, 20)}... successfully loaded</p>
-              <p class="text-[10px] text-emerald-600 font-mono">OpenSlide parsed successfully | Tiled 40x Resolution Ready</p>
+              <p class="text-[10px] text-pci-blue font-mono">OpenSlide parsed successfully | Tiled 40x Resolution Ready</p>
               <button id="reset-slide-upload" class="mt-2 text-xs text-pci-blue underline font-semibold focus:outline-none">Clear Slide</button>
             </div>
           `;
@@ -545,14 +545,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const box = document.createElement('div');
         box.className = 'bg-white p-8 rounded-2xl border border-gray-100 shadow-md text-center animate-fade-in';
         box.innerHTML = `
-          <div class="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="h-8 w-8 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <div class="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="h-8 w-8 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Message received</h3>
           <p class="text-gray-600 mb-6 max-w-sm mx-auto">Thanks for contacting Precision Cellular Immunology. Our team will reply to <b class="cf-echo"></b> within one business day.</p>
-          <a href="index.html" class="inline-flex items-center justify-center bg-pci-blue hover:bg-pci-blue-light text-white font-medium px-6 py-2.5 rounded-lg transition-all duration-200">Return Home</a>`;
+          <a href="index.html" class="inline-flex items-center justify-center bg-pci-blue hover:bg-pci-blue-hover text-white font-medium px-6 py-2.5 rounded-lg transition-all duration-200">Return Home</a>`;
         box.querySelector('.cf-echo').textContent = fd.get('email');
         contactForm.replaceWith(box);
         if (status) status.hidden = true;
@@ -578,7 +578,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = emailSignupForm.querySelector('button[type="submit"]');
       btn.disabled = true;
       const box = document.createElement('div');
-      box.className = 'p-6 bg-emerald-50/20 border border-emerald-500/20 rounded-xl text-center animate-fade-in';
+      box.className = 'p-6 bg-teal-50/20 border border-teal-bright/20 rounded-xl text-center animate-fade-in';
       box.setAttribute('role', 'status');
       const title = document.createElement('p');
       const body = document.createElement('p');
@@ -586,7 +586,7 @@ document.addEventListener('DOMContentLoaded', () => {
       body.className = 'text-xs text-gray-300';
       try {
         await saveInquiry({ kind: 'newsletter', email, page: window.location.pathname });
-        title.classList.add('text-emerald-400');
+        title.classList.add('text-teal-bright');
         title.textContent = '\u2713 You\u2019re on the list';
         body.textContent = `We'll email ${email} when early cohort access opens.`;
         box.append(title, body);

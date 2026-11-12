@@ -50,7 +50,7 @@ function renderHeader(user) {
   const badge = document.getElementById('acct-verified-badge');
   if (verified) {
     badge.textContent = '✓ Verified';
-    badge.classList.add('bg-emerald-50', 'text-emerald-700');
+    badge.classList.add('bg-teal-50', 'text-pci-blue');
   } else {
     badge.textContent = '⚠ Unverified';
     badge.classList.add('bg-amber-50', 'text-amber-700');
@@ -108,7 +108,7 @@ function showMsg(form, text, ok) {
   const el = form.querySelector('.acct-msg');
   el.textContent = text;
   el.classList.remove('hidden');
-  el.style.color = ok ? '#059669' : '#e11d48';
+  el.style.color = ok ? '#0a7d68' : '#e11d48';
   setTimeout(() => el.classList.add('hidden'), 3200);
 }
 
@@ -178,7 +178,7 @@ async function loadOrders(user) {
       </div>
       <p class="font-semibold text-gray-700 text-sm">No orders yet</p>
       <p class="text-xs text-gray-400 mt-1">Orders appear here as soon as you check out.</p>
-      <a href="products.html" class="inline-block mt-4 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-4 py-2 rounded-lg">Browse the catalog</a>
+      <a href="products.html" class="inline-block mt-4 bg-pci-blue hover:bg-pci-blue-hover text-white text-xs font-semibold px-4 py-2 rounded-lg">Browse the catalog</a>
     </div>`;
   try {
     const { data, error } = await supabase
@@ -211,7 +211,7 @@ function orderCard(o) {
   const items = Array.isArray(o.items) ? o.items : [];
   const date = new Date(o.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
   const total = o.subtotal != null ? `$${Number(o.subtotal).toFixed(2)}` : '';
-  const statusColor = { submitted: 'bg-blue-50 text-blue-700', paid: 'bg-emerald-50 text-emerald-700', shipped: 'bg-indigo-50 text-indigo-700', completed: 'bg-emerald-50 text-emerald-700', cancelled: 'bg-gray-100 text-gray-500' }[o.status] || 'bg-gray-100 text-gray-700';
+  const statusColor = { submitted: 'bg-blue-50 text-blue-700', paid: 'bg-teal-50 text-teal', shipped: 'bg-indigo-50 text-indigo-700', completed: 'bg-teal-50 text-teal', cancelled: 'bg-gray-100 text-gray-500' }[o.status] || 'bg-gray-100 text-gray-700';
   return `
     <div class="border border-gray-200 rounded-xl overflow-hidden">
       <div class="bg-gray-50 border-b border-gray-200 px-5 py-3 flex items-center justify-between text-xs">
