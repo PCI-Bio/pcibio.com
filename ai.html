@@ -97,7 +97,8 @@
         <!-- 20-second teaser cut from the demo -->
         <div class="lg:col-span-6 animate-fade-in" style="animation-delay: 200ms;">
           <figure class="media-frame hover-lift" id="ai-teaser">
-            <video muted autoplay loop playsinline preload="metadata" poster="/video/pci-ai-teaser-poster.jpg" aria-label="Twenty-second preview of one case read in PCI - AI"><source src="/video/pci-ai-teaser.mp4" type="video/mp4"></video>
+            <video id="teaser" controls muted autoplay loop playsinline preload="metadata" poster="/video/pci-ai-teaser-poster.jpg" aria-label="Twenty-second preview of one case read in PCI - AI"><source src="/video/pci-ai-teaser.mp4" type="video/mp4"></video>
+            <script>(function(){var v=document.getElementById('teaser');if(v&&window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();}})();</script>
             <figcaption class="px-4 py-3 text-xs font-mono text-gray-300 border-t border-white/10 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
               <span>20-second preview.</span>
               <a href="https://pcibio.ai/platform#demo" target="_blank" rel="noopener" class="text-teal-bright hover:underline">Watch the full demo on pcibio.ai. &#8594;</a>
@@ -117,7 +118,7 @@
           A grade scale from the slide itself.
         </h2>
         <p class="text-gray-600 mt-4 leading-relaxed">
-          The controls are cut and stained with the tissue, on the same glass and in the same run. Three control lines of known p53 staining go through the stain with the tissue and set that slide's grade scale.
+          The controls are cut and stained with the tissue, on the same glass and in the same run. Three control lines of known p53 staining go through the stain with the tissue and set that slide's grade scale. If they did not stain enough to grade the tissue, the case reads No call.
         </p>
       </div>
 
@@ -161,14 +162,14 @@
           Four steps, one case.
         </h2>
         <p class="text-gray-600 mt-4 leading-relaxed">
-          The lab and the pathologist stay in charge of every step. The software does the counting. Or watch it: <a href="https://pcibio.ai/platform#demo" target="_blank" rel="noopener" class="text-pci-blue hover:text-pci-blue-hover font-semibold underline underline-offset-2">the whole read in 80 seconds</a>.
+          The lab and the pathologist stay in charge of every step. The software does the counting. Or watch it: <a href="https://pcibio.ai/platform#demo" target="_blank" rel="noopener" class="text-pci-blue hover:text-pci-blue-hover font-semibold underline underline-offset-2">one case, start to finish, in an 80-second video</a>.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Step 1 -->
         <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col hover-lift reveal">
-          <img src="img/ai/ihc-whole.jpg" alt="p53 IHC slide with the three control lines at the top" class="w-full aspect-[4/3] object-cover rounded-lg border border-gray-100 mb-5" loading="lazy" decoding="async">
+          <img src="img/ai/ihc-whole.jpg" alt="p53 IHC slide with the three control lines at the top" class="w-full aspect-[4/3] object-cover object-top rounded-lg border border-gray-100 mb-5" loading="lazy" decoding="async">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-full step-circle-1 text-white text-sm font-bold flex items-center justify-center shadow shrink-0">1</div>
             <h3 class="text-lg font-semibold text-gray-900">Upload</h3>
@@ -183,7 +184,7 @@
             <div class="w-10 h-10 rounded-full step-circle-2 text-white text-sm font-bold flex items-center justify-center shadow shrink-0">2</div>
             <h3 class="text-lg font-semibold text-gray-900">Mark</h3>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">The lab confirms the three control lines. The pathologist marks the tumor region to score.</p>
+          <p class="text-sm text-gray-600 leading-relaxed">The lab confirms the three control lines. The pathologist marks the tumor region to score. The software suggests both; a person confirms them.</p>
         </div>
 
         <!-- Step 3 -->
@@ -226,7 +227,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
         <div class="lg:col-span-5 bg-gray-50 border border-gray-200 rounded-2xl p-8 flex flex-col hover-lift reveal">
           <p class="text-5xl sm:text-6xl font-heading font-bold text-navy tracking-tight tabular-nums leading-none">0.61–0.67</p>
-          <p class="text-gray-700 mt-5 leading-relaxed">is the agreement (<strong class="text-gray-900">Fleiss κ</strong>) between readers of mixed experience scoring the same p53 slides. Moderate to substantial, short of reliable.</p>
+          <p class="text-gray-700 mt-5 leading-relaxed">is the agreement (<strong class="text-gray-900">Fleiss κ</strong>) between readers of mixed experience scoring the same p53 slides. Substantial, yet short of almost perfect.</p>
           <div class="mt-auto pt-8">
             <svg viewBox="0 0 420 70" class="w-full h-auto overflow-visible" role="img" aria-label="Agreement scale from 0 to 1 with the measured range 0.61 to 0.67 marked">
               <rect x="10" y="24" width="400" height="12" rx="6" fill="#dbe6f5"/>
@@ -284,7 +285,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-navy border-t border-white/5 text-gray-500 py-16 relative z-10" id="main-global-footer">
+  <footer class="bg-navy border-t border-white/5 text-gray-300 py-16 relative z-10" id="main-global-footer">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
         
@@ -298,7 +299,7 @@
             "Precision IHC Controls. AI-Powered Assessment." <br>
             Standardizing histology stains through reproducible cell line plugs.
           </p>
-          <div class="text-sm space-y-2 font-mono text-gray-500 pt-2">
+          <div class="text-sm space-y-2 font-mono text-gray-300 pt-2">
             <div><svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 mr-1 align-middle" fill="currentColor" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>7505 Fannin St, 640B, Houston, TX 77054</div>
             <div><svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 mr-1 align-middle" fill="currentColor" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg><a href="mailto:support@pcibio.com" class="hover:text-teal-bright transition-colors">support@pcibio.com</a></div>
             <div><svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 mr-1 align-middle" fill="currentColor" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg><a href="https://www.linkedin.com/company/precision-cellular-immunology" target="_blank" rel="noopener" class="hover:text-teal-bright transition-colors">precision-cellular-immunology</a></div>
@@ -334,10 +335,10 @@
         </div>
       </div>
 
-      <p class="text-[11px] text-gray-500 mt-6 text-center sm:text-left">Research use only — not for use in diagnostic procedures.</p>
+      <p class="text-[11px] text-gray-300 mt-6 text-center sm:text-left">Research use only — not for use in diagnostic procedures.</p>
 
       <!-- Bottom Bar -->
-      <div class="border-t border-white/5 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 font-mono">
+      <div class="border-t border-white/5 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-300 font-mono">
         <div>&#169; 2026 Precision Cellular Immunology, LLC. All rights reserved.</div>
         <div class="flex gap-4 mt-4 sm:mt-0">
           <a href="/privacy.html" class="hover:text-gray-400">Privacy Policy</a>

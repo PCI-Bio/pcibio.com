@@ -122,7 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('spec-biomarker').textContent = product.biomarker;
   document.getElementById('spec-media').textContent = product.media;
   document.getElementById('spec-type').textContent = product.type;
-  document.getElementById('spec-cell-lines').textContent = product.cellLines.filter(c => c !== "-").join(', ');
   document.getElementById('spec-code').textContent = product.code;
   
   // Product QR points to this product page on pcibio.com (not an external store).

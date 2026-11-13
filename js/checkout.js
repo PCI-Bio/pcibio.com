@@ -21,7 +21,7 @@ function toast(msg, kind) {
   el.style.cssText =
     'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:100000;' +
     'background:' + (kind === 'error' ? '#b91c1c' : '#0b2e5f') + ';color:#fff;padding:12px 20px;' +
-    'border-radius:12px;font:500 13px Inter,sans-serif;box-shadow:0 12px 32px rgba(6,26,56,.35)';
+    'border-radius:12px;font:500 13px "IBM Plex Sans",sans-serif;box-shadow:0 12px 32px rgba(6,26,56,.35)';
   document.body.appendChild(el);
   setTimeout(() => el.remove(), 3200);
 }
