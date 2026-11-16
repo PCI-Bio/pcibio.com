@@ -20,6 +20,7 @@ const catalog = JSON.parse(readFileSync(join(__dirname, '_catalog.json'), 'utf8'
 
 const ALLOWED_ORIGINS = [
   'https://pci-update.vercel.app',
+  'https://pcibio-com.vercel.app',
   'https://pcibio.com',
   'https://www.pcibio.com',
 ];
@@ -53,7 +54,7 @@ export default async function handler(req, res) {
   const secret = process.env.STRIPE_SECRET_KEY;
   if (!secret) {
     return res.status(500).json({
-      error: 'Payment is not configured yet. Set STRIPE_SECRET_KEY in the deployment environment.',
+      error: 'Online payment is not available right now. Please email support@pcibio.com to place your order.',
     });
   }
 
