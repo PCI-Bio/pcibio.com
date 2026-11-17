@@ -67,7 +67,7 @@ are served as-is; update the sitemap's `lastmod` when a page changes.
 
 | File | Purpose |
 |---|---|
-| `index.html` | Home: hero on the TriControl slide, offerings, featured controls, workflow, CTA |
+| `index.html` | Home: hero on the TriControl slide with the block beside it, offerings, featured controls (p53 TriControl, PD-L1 DualControl, PD-L1 Single Control, MMR QuadControl), workflow, CTA |
 | `products.html`, `product.html` | Catalog and product detail (cart, Stripe checkout) |
 | `controls.html` | IHC Controls explainer and biomarker table |
 | `ai.html` | The AI platform, in pcibio.ai's words, with the teaser; links to pcibio.ai |
