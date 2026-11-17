@@ -1,0 +1,63 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  /* The p53 TriControl FFPE block, as a model: a mint tissue cassette (28 x 41 x 7 mm, slanted writing face at the
+     front) with the paraffin block on top and the three control plugs in a row. 14 px/mm. Not to scale in detail.
+     Render: headless Chrome, window 1100 x 1000, transparent background, then trim (see IMAGES.md). */
+  html, body { margin: 0; background: transparent; }
+  .stage { width: 1100px; height: 1000px; display: grid; place-items: center; perspective: 2400px; }
+  .obj { position: relative; width: 392px; height: 574px; transform-style: preserve-3d;
+    transform: rotateX(54deg) rotateZ(-34deg); }
+  .obj > div, .wax > div { position: absolute; }
+  .shadow { inset: 20px -16px -30px 10px; background: rgba(11,46,95,.45); filter: blur(30px); border-radius: 26px; transform: translateZ(-2px); }
+
+  /* cassette: top (back 33 mm), slanted writing face (front 8 mm), sides */
+  .top { left: 0; top: 0; width: 392px; height: 462px; transform: translateZ(98px); border-radius: 6px 6px 0 0;
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Crect x='8' y='8' width='12' height='12' rx='1.5' fill='%23519c83' fill-opacity='.38'/%3E%3C/svg%3E") 0 0 / 28px 28px,
+      linear-gradient(160deg, #cdf0e1, #b6e3cf 60%, #c3eadb);
+    box-shadow: inset 0 0 0 3px rgba(255,255,255,.45), inset 0 0 0 5px rgba(70,140,115,.25); }
+  .slant { left: 0; top: 462px; width: 392px; height: 149px; transform-origin: top; transform: translateZ(98px) rotateX(-41.2deg);
+    background: linear-gradient(180deg, #b9e4d1, #a7d8c2); box-shadow: inset 0 3px 0 rgba(255,255,255,.5), inset 0 0 0 2px rgba(70,140,115,.25);
+    display: flex; align-items: center; gap: 26px; padding: 0 30px; box-sizing: border-box; font-family: "IBM Plex Sans", sans-serif; color: #17262f; }
+  .dm { width: 84px; height: 84px; display: grid; grid-template-columns: repeat(12, 1fr); flex: none; }
+  .dm i { background: #17262f; } .dm i.o { background: transparent; }
+  .txt { flex: 1; display: flex; flex-direction: column; align-items: center; line-height: 1; }
+  .txt b { font-size: 44px; font-weight: 700; letter-spacing: .01em; }
+  .txt span { margin-top: 10px; width: 100%; display: flex; justify-content: space-between; font-size: 22px; font-weight: 600; }
+  .side { top: 0; width: 98px; height: 574px; transform-origin: left; transform: rotateY(-90deg);
+    clip-path: polygon(0 0, 100% 0, 100% 462px, 0 100%); background: linear-gradient(90deg, #7fbea3, #95ceb5); }
+  .side.l { left: 0; } .side.r { left: 392px; background: linear-gradient(90deg, #6fae94, #86c2a8); }
+
+  /* paraffin block on top: 22 x 26 mm, 3 mm proud of the cassette */
+  .wax { left: 42px; top: 34px; width: 308px; height: 364px; transform: translateZ(98px); transform-style: preserve-3d; }
+  .face { inset: 0; transform: translateZ(42px); border-radius: 3px;
+    background: linear-gradient(150deg, #fdfbf6, #f1ece1 55%, #f8f5ee);
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,.8), inset 0 0 22px rgba(190,175,140,.25);
+    display: flex; align-items: center; justify-content: center; gap: 22px; }
+  .face::after { content: ""; position: absolute; inset: 0; background: linear-gradient(120deg, transparent 35%, rgba(255,255,255,.65) 46%, transparent 56%); }
+  .plug { width: 70px; height: 70px; border-radius: 50%;
+    background: radial-gradient(circle at 40% 36%, #f6eedd, #e6d7b8 62%, #d6c39d);
+    box-shadow: inset 0 0 0 2px rgba(150,122,75,.35), 0 0 0 4px rgba(225,214,188,.35); }
+  .wf { left: 0; top: 364px; width: 308px; height: 42px; transform-origin: top; transform: translateZ(42px) rotateX(-90deg);
+    background: linear-gradient(180deg, #ebe4d4, #ddd3bd); }
+  .ws { top: 0; width: 42px; height: 364px; transform-origin: left; transform: rotateY(-90deg); background: linear-gradient(90deg, #d8cdb5, #e6dfcf); }
+  .ws.l { left: 0; } .ws.r { left: 308px; background: linear-gradient(90deg, #c9bda2, #dbd1ba); }
+</style></head>
+<body><div class="stage"><div class="obj">
+  <div class="shadow"></div>
+  <div class="side l"></div><div class="side r"></div>
+  <div class="top"></div>
+  <div class="slant"><div class="dm" id="dm"></div><div class="txt"><b>P53</b><span><em style="font-style:normal">TriControl&trade;</em><em style="font-style:normal">PCI</em></span></div></div>
+  <div class="wax">
+    <div class="ws l"></div><div class="ws r"></div><div class="wf"></div>
+    <div class="face"><div class="plug"></div><div class="plug"></div><div class="plug"></div></div>
+  </div>
+</div></div>
+<script>
+  // a decorative 12 x 12 code mark, deterministic (same generator as the slide label)
+  var s = 11, h = ''; for (var i = 0; i < 144; i++) { s = (s * 9301 + 49297) % 233280; var edge = i < 12 || i % 12 === 0; h += '<i' + ((edge || s / 233280 > .5) ? '' : ' class="o"') + '></i>'; }
+  document.getElementById('dm').innerHTML = h;
+</script>
+</body></html>
