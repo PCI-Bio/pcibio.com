@@ -11,7 +11,9 @@
 //       STRIPE_SECRET_KEY         — sk_live_... (or sk_test_...)
 //       STRIPE_WEBHOOK_SECRET     — whsec_... shown when you add the endpoint
 //       SUPABASE_URL              — your project URL
-//       SUPABASE_SERVICE_ROLE_KEY — service_role key (SECRET; bypasses RLS)
+//       SUPABASE_SERVICE_ROLE_KEY — the project's secret key, sb_secret_... (or, on
+//                                   older projects, the legacy service_role key).
+//                                   SECRET; bypasses RLS.
 //
 // We verify the Stripe signature, confirm the session is fully paid, and
 // mark the matching order (by client_reference_id / metadata.orderId) paid.
@@ -27,6 +29,19 @@ async function readRaw(req) {
 // Stripe requires the raw request body to verify the signature; disable Vercel's
 // default JSON body parser for this route.
 export const config = { api: { bodyParser: false } };
+
+// Supabase's new secret keys (sb_secret_...) go in the apikey header only; Supabase
+// asks that they are not sent as "Authorization: Bearer". The legacy service_role
+// key is a JWT (it starts with "eyJ") and is sent in both headers, as before.
+export function supabaseHeaders(serviceKey) {
+  const headers = {
+    apikey: serviceKey,
+    'content-type': 'application/json',
+    prefer: 'return=minimal',
+  };
+  if (serviceKey.startsWith('eyJ')) headers.authorization = `Bearer ${serviceKey}`;
+  return headers;
+}
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -88,12 +103,7 @@ export default async function handler(req, res) {
       `${supaUrl}/rest/v1/orders?id=eq.${encodeURIComponent(orderId)}`,
       {
         method: 'PATCH',
-        headers: {
-          apikey: serviceKey,
-          authorization: `Bearer ${serviceKey}`,
-          'content-type': 'application/json',
-          prefer: 'return=minimal',
-        },
+        headers: supabaseHeaders(serviceKey),
         body: JSON.stringify({
           status: 'paid',
           reference: String(session.payment_intent || session.id),
