@@ -4,7 +4,8 @@
 -- so applying this to a fresh project or an existing one both work.
 --
 -- Auth (email + password, Google OAuth) needs NO tables — Supabase manages
--- auth.users for you. This file only adds the app tables: `carts` and `orders`.
+-- auth.users for you. This file only adds the app tables (`carts`, `orders`,
+-- `inquiries`) and the access the website needs to use them.
 
 -- ============================================================================
 -- Extensions
@@ -177,3 +178,16 @@ create policy "anyone can submit an inquiry"
   on public.inquiries for insert
   to anon, authenticated
   with check (true);
+
+-- ============================================================================
+-- Table access for the website
+-- ============================================================================
+-- Newer Supabase projects do not grant table access to the website's roles
+-- automatically (older ones did). Without these lines the contact form and
+-- the cart fail, and a paid order is never recorded. The policies above still
+-- decide which rows each person can see or change.
+grant select, insert, update, delete on table public.carts to authenticated;
+grant select, insert on table public.orders to authenticated;
+grant insert on table public.inquiries to anon, authenticated;
+grant usage on sequence public.inquiries_id_seq to anon, authenticated;
+grant select, insert, update, delete on table public.carts, public.orders, public.inquiries to service_role;
